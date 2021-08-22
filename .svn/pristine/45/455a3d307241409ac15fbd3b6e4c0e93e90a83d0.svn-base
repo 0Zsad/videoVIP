@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" type="text/css" href="./css/scsp.css"/>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body class="bg">
+		<!--<div class="head">
+			<p>收藏视频</p>
+		</div>
+		<div class="body" >
+			<table width="100%" cellspacing="0" id="table1">
+				<tr>
+					<th width="20%">用户账号</th>
+					<th width="30%">视频编号</th>
+					<th width="30%">收藏时间</th>
+					<th width="20%">操作</th>
+				</tr>
+			</table>
+		</div>-->
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h3 class="text-left">
+						<i class="fa fa-address-book fa-1x" aria-hidden="true"></i>
+						<i>我的收藏</i>
+					</h3>
+					<div class="panel panel-info">
+						<h4>
+							<strong><i class="fa fa-bug" aria-hidden="true"></i> 我的订阅</strong>
+							<span style="margin-left: 20px;">
+								<input type="button" class="btn btn-danger" value="清除所有收藏" />
+							</span>
+						</h4>
+						<!-- 标签页开始 -->
+						<div class="tabbable" id="tabs-378597">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									 <a href="#panel-1" data-toggle="tab">全部</a>
+								</li>
+								<li>
+									 <a href="#panel-2" data-toggle="tab">电影</a>
+								</li>
+								<li>
+									 <a href="#panel-3" data-toggle="tab">动漫</a>
+								</li>
+								<li>
+									 <a href="#panel-4" data-toggle="tab">剧集</a>
+								</li>
+								<li>
+									 <a href="#panel-5" data-toggle="tab">综艺</a>
+								</li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="panel-1">
+									<div class="item-scsp">
+										<div class="row item-img">
+											<!-- 图 -->
+										<!--<div class="col-md-3">
+												<div class="thumbnail">
+													<img alt="300x200" src="v3/default4.jpg" />
+													<div class="caption">
+														<h3>
+															你是我的荣耀
+														</h3>
+														<p>
+															<a class="btn btn-warning" href="#">点击观看？</a>
+															<a class="btn btn-danger" href="#">删除</a>
+														</p>
+													</div>
+												</div>
+											</div>-->
+											<!-- 图-->
+											
+										</div>
+									</div>
+								</div>
+								<div class="tab-pane" id="panel-2">
+									<div class="item-scsp">
+										
+									</div>
+								</div>
+								<div class="tab-pane" id="panel-3">
+									<div class="item-scsp">
+										
+									</div>
+								</div>
+								<div class="tab-pane" id="panel-4">
+									<div class="item-scsp">
+										
+									</div>
+								</div>
+								<div class="tab-pane" id="panel-5">
+									<div class="item-scsp">
+										
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 标签页结束 -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/scsp.js" type="text/javascript" charset="utf-8"></script>
+<!--	<script>
+	/* 明天再改 */
+	$.ajax({
+		type:"post",
+		url:"/videoVIP/ScbController/list.do",
+		dateType:"json",
+		success:function(data){
+			var sp = '';
+			for(i=1;i<data.length+1;i++){
+				sp += '<tr id="sp'+i+'">'
+				+'<td>'+data[i-1].yhzh+'</td>'
+				+'<td>'+data[i-1].spid+'</td>'
+				+'<td>'+data[i-1].scsj+'</td>'
+				+'<td><a onclick="doDelete()">删除</a></td>'
+				+'</tr>';
+			}
+			$("#table1").append(sp);
+		}
+	})
+	
+	function doDelete(){
+		$.post("/videoVIP/ScbController/deleteById.do",{yhzh:id},function(ret){
+			if(ret == true){
+				alert("删除成功！");
+				location.href = "/videoVIP/pages_user/scsp.html";
+			}else{
+				alert("删除失败！");
+			}
+		});
+	}
+	</script>-->
+</html>

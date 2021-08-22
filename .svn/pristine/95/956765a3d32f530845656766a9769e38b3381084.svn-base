@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+	background: url(../img/bg1.jpg) no-repeat ;
+}
+		
+form {
+	width: 500px;
+	height: 430px;
+	border: 1px solid black;
+	margin: 100px auto;
+	background-color: #DFF0D8;
+}
+
+form h3 {
+	margin-top: 50px;
+	margin-left: 80px;
+}
+
+p {
+	margin-left: 80px;
+}
+
+hr {
+	margin-left: 80px;
+}
+			
+.a{
+	margin-left: 40px;
+}
+
+input,textarea {
+	background: url(../img/xh.png) no-repeat right;
+	background-size: 15px;
+}
+
+button {
+	margin-top: 30px;
+	background: rgb(0, 85, 255);
+	width: 200px;
+	height: 40px;
+	font-size: 18px;
+	border-radius: 5px;
+	color: white;
+}
+
+span#as:hover input {
+	width: 250px;
+	height: 40px;	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+var spid = UrlParm.parm("spid");
+
+url = "/videoVIP/SpbController/selectById.do";
+parm = {"spid":spid};
+$.post(url,parm,function(data){
+	console.log(data)
+	$("#fmimg").attr("src",data.spfm);
+	
+	$("#spname").html("片名："+data.sppm);
+	$("#sptype").html("类型："+data.splx);
+	$("#spdq").html("地区："+data.spdq);
+	$("#sptime").html("时间："+data.spsj);
+	$("#spjj").html("简介："+data.spjj);
+})
+
+$("#bfbtn").click(function(){
+	splink = "/videoVIP/pages_video/video.html?spid="+spid;
+	location.href=splink;
+})

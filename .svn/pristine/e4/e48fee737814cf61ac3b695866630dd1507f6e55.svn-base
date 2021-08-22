@@ -1,0 +1,24 @@
+package com.lanqiao.videoVIP.mapper;
+
+import com.lanqiao.videoVIP.entity.Scb;
+import com.lanqiao.videoVIP.util.StrUtil;
+
+public class ScbProvide {
+	public String getListSql(Scb sp) {
+		StringBuffer sql = new StringBuffer("select yhzh scsj spid from scb where 1=1 ");
+
+		if (null != sp) {
+			if (StrUtil.isNotEmpty(sp.getSpid())) {
+				sql.append(" and spid like concat('%',#{spid},'%') ");
+			}
+			if (StrUtil.isNotEmpty(sp.getScsj())) {
+				sql.append(" and sppm like concat('%',#{sppm},'%') ");
+			}
+			if (StrUtil.isNotEmpty(sp.getYhzh())) {
+				sql.append(" and sjh spfm concat('%',#{spfm},'%') ");
+			}
+		}
+
+		return sql.toString();
+	}
+}

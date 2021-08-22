@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/css/nav-foot.css"/>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="/videoVIP/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" href="./css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="./css/stui_block.css" type="text/css" />
+		<link rel="stylesheet" href="./css/stui_default.css" type="text/css" />
+		<link rel="stylesheet" href="./css/stui_block_color.css" type="text/css" />
+		<script type="text/javascript" src="./js/home.js"></script>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/stui_block.js"></script>
+		<script type="text/javascript" src="./js/stui_default.js"></script>
+	</head>
+	<body>
+	
+		<!-- 页面头部（可复制） -->
+		<div class="head">
+			<!-- 导航条部分开始 -->
+			<nav class="navbar navbar-default navbar-static-top" id="nav1">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand glyphicon glyphicon-film" href="/videoVIP/index.html"></a>
+			      <a class="navbar-brand" href="/videoVIP/index.html" id="vip">VIP影院</a>
+			    </div>
+			  	
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li >
+			        	<a href="/videoVIP/index.html">首页 <span class="sr-only">(current)</span></a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/dy.html">电影</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/dm.html">动漫</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/jj.html">剧集</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/zy.html">综艺</a>
+			        </li>
+			      </ul>
+			      <!-- 用户头像 -->
+			      <a href="/videoVIP/pages_Login/userlogin.html" id="yhtx">
+			      	<img src="/videoVIP/img/yhtx.jpeg" class="img-circle">
+			      	<span id="">
+			      		登&nbsp;&nbsp;陆
+			      	</span>
+			      </a>
+			      
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" id="nav-text" placeholder="尽情搜索">
+			        </div>
+			        <button type="submit" class="btn btn-info glyphicon glyphicon-search"></button>
+			      </form>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			<!-- 导航条部分结束 -->
+		</div>
+		
+		<div class="container">
+		        <div class="row">
+		            <div class="stui-pannel stui-pannel-bg clearfix">
+						<div class="stui-pannel-box">
+							<div class="stui-pannel_hd">
+								<div class="stui-pannel__head active bottom-line clearfix">
+									<h3 class="title">
+										
+										最新电影							</h3>
+									<!-- <ul class="nav nav-tabs">
+										<li  class="active"><a  href="/vodshow/1--time---------/">最新更新</a></li>
+										<li ><a  href="/vodshow/1--hits---------/">最近热播</a></li>
+									</ul> -->
+								</div>
+								<ul class="stui-screen__list type-slide bottom-line-dot clearfix">
+		
+									<li  class="active"><a  href="/vodshow/1--time---------/">最新更新</a></li>
+									<li ><a  href="/vodshow/1--hits---------/">最近热播</a></li>
+								</ul>
+								<ul class="stui-screen__list type-slide bottom-line-dot clearfix">
+																<li>
+										<span class="text-muted">按类型</span>
+									</li>
+										                        	<li><a href="/vodshow/6-----------/" class="text-muted">动作片</a></li>
+			                        		                        	<li><a href="/vodshow/7-----------/" class="text-muted">喜剧片</a></li>
+			                        		                        	<li><a href="/vodshow/8-----------/" class="text-muted">爱情片</a></li>
+			                        		                        	<li><a href="/vodshow/9-----------/" class="text-muted">科幻片</a></li>
+			                        		                        	<li><a href="/vodshow/10-----------/" class="text-muted">恐怖片</a></li>
+			                        		                        	<li><a href="/vodshow/11-----------/" class="text-muted">剧情片</a></li>
+			                        		                        	<li><a href="/vodshow/12-----------/" class="text-muted">战争片</a></li>
+			                        		                        	<li><a href="/vodshow/23-----------/" class="text-muted">动画片</a></li>
+			                        		                        	<li><a href="/vodshow/25-----------/" class="text-muted">纪录片</a></li>
+			                        		                        	<li><a href="/vodshow/26-----------/" class="text-muted">犯罪片</a></li>
+			                        							</ul>
+								<ul class="stui-screen__list type-slide bottom-line-dot clearfix">
+									<li>
+										<span class="text-muted">按地区</span>
+									</li>
+															        <li><a   href="/vodshow/1-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86----------/">中国大陆</a></li>
+								        						        <li><a   href="/vodshow/1-%E4%B8%AD%E5%9B%BD%E9%A6%99%E6%B8%AF----------/">中国香港</a></li>
+								        						        <li><a   href="/vodshow/1-%E4%B8%AD%E5%9B%BD%E5%8F%B0%E6%B9%BE----------/">中国台湾</a></li>
+								        						        <li><a   href="/vodshow/1-%E7%BE%8E%E5%9B%BD----------/">美国</a></li>
+								        						        <li><a   href="/vodshow/1-%E6%B3%95%E5%9B%BD----------/">法国</a></li>
+								        						        <li><a   href="/vodshow/1-%E8%8B%B1%E5%9B%BD----------/">英国</a></li>
+								        						        <li><a   href="/vodshow/1-%E6%97%A5%E6%9C%AC----------/">日本</a></li>
+								        						        <li><a   href="/vodshow/1-%E9%9F%A9%E5%9B%BD----------/">韩国</a></li>
+								        						        <li><a   href="/vodshow/1-%E5%BE%B7%E5%9B%BD----------/">德国</a></li>
+								        						        <li><a   href="/vodshow/1-%E6%B3%B0%E5%9B%BD----------/">泰国</a></li>
+								        						        <li><a   href="/vodshow/1-%E5%8D%B0%E5%BA%A6----------/">印度</a></li>
+								        						        <li><a   href="/vodshow/1-%E6%84%8F%E5%A4%A7%E5%88%A9----------/">意大利</a></li>
+								        						        <li><a   href="/vodshow/1-%E8%A5%BF%E7%8F%AD%E7%89%99----------/">西班牙</a></li>
+								        						        <li><a  class="hide" href="/vodshow/1-%E5%8A%A0%E6%8B%BF%E5%A4%A7----------/">加拿大</a></li>
+								        						</ul>
+								<ul class="stui-screen__list type-slide clearfix">
+									<li>
+										<span class="text-muted">按年份</span>
+									</li>
+							        				                <li><a  href="/vodshow/1-----------2021/">2021</a></li>
+						                				                <li><a  href="/vodshow/1-----------2020/">2020</a></li>
+						                				                <li><a  href="/vodshow/1-----------2019/">2019</a></li>
+						                				                <li><a  href="/vodshow/1-----------2018/">2018</a></li>
+						                				                <li><a  href="/vodshow/1-----------2017/">2017</a></li>
+						                				                <li><a  href="/vodshow/1-----------2016/">2016</a></li>
+						                				                <li><a  href="/vodshow/1-----------2015/">2015</a></li>
+						                				                <li><a  href="/vodshow/1-----------2014/">2014</a></li>
+						                				                <li><a  href="/vodshow/1-----------2013/">2013</a></li>
+						                				                <li><a  href="/vodshow/1-----------2012/">2012</a></li>
+						                				                <li><a  href="/vodshow/1-----------2011/">2011</a></li>
+						                				                <li><a  href="/vodshow/1-----------2010/">2010</a></li>
+						                							
+								</ul>	
+							</div>
+		
+		
+							<!-- 排序 -->
+		<!--					<div class="stui-pannel_hd">-->
+		<!--						<div class="stui-pannel__head active bottom-line clearfix">-->
+		<!--							<ul class="nav nav-head">-->
+		<!--								<li  class="active"><a href="/vodshow/1--time---------/">按时间</a></li>-->
+		<!--								<li ><a href="/vodshow/1--hits---------/">按人气</a></li>-->
+		<!--								<li ><a href="/vodshow/1--score---------/">按评分</a></li>-->
+		<!--							</ul>-->
+		<!--						</div>-->
+		<!--					</div>-->
+							<!-- end 排序 -->
+							<div class="stui-pannel_bd">
+								<ul class="stui-vodlist clearfix">
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86993/" title="赘婿之吉兴高照" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/9e7481b06234bc3e171b6b905cb6853c.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">超清</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86993/" title="赘婿之吉兴高照">赘婿之吉兴高照</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">刘冠麟,王祉萱,岳旸,韩承羽,戴向宇,海波,陈冠英,张紫淋,蔡纲,胡丹丹,曹曦月,张净桐,姚一奇,马小茜,沈浩</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86917/" title="俑之城" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210812-1/23dac38e5e37262c83cf117db697806d.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">超清</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86917/" title="俑之城">俑之城</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">朱光祖,张茗,周子瑜,谭笑</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86988/" title="厄运假期" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/456662439dfc78ff32ac5a0f7c54ff14.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">HD</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86988/" title="厄运假期">厄运假期</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">约翰·大卫·华盛顿,艾丽西亚·维坎德,波伊德·霍布鲁克,薇姬·克里普斯,Daphne,Alexander,约戈斯·皮尔帕索珀罗斯,Olga,Spyraki,帕诺斯·科罗尼斯,Isabella,Margara,Lena,Kitsopoulou,Marc,Marder,Andreas,Marianos,Leonardo,Thimo,Dimitra,Mesimerli,Maria,Votti</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86987/" title="罗蕾莱" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/383d8a6cd80e5745004d7d6e2a451c72.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">HD</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86987/" title="罗蕾莱">罗蕾莱</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">吉娜·马隆,巴勃罗·施瑞博尔,Ryan,Findley,Cory,Ellis,David,Hallquist,Jerry,McEntire,Jr.,Terry,McLean,Tony,Mothershead,James,Pratt,Joshua,Schertenleib,Trish,Egan,Jerry,Bell,Jr.,Chancellor,Perry,Parker,Pascoe-Sheppard,Amelia,Borgerding</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86986/" title="健听女孩" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/eb7640cfa1840e6042301b6bdfdd4b62.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">HD</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86986/" title="健听女孩">健听女孩</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">艾米莉亚·琼斯,Daniel,Durant,约翰·菲奥里,Lonnie,Farmer,凯文·查普曼,艾米·福赛思,Courtland,Jones,Molly,Beth,Thomas,福迪亚·瓦尔什-匹罗,Ayana,Brown,玛丽·玛特琳,Jason,Pugatch,欧赫尼奥·德尔维斯,何塞·冈斯·阿尔维斯,欧文·伯克,梅利莎·麦克米金,埃里卡·麦克德莫特,大卫·纽森,大卫·布肯德尔,琪拉·皮查多,Troy,Kotsur,Kyana,Fanene,Anilee,List</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86984/" title="太阳不能动" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/53e5f517682c2d0245ddb9df026c5938.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">超清</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86984/" title="太阳不能动">太阳不能动</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">藤原龙也,竹内凉真,韩孝周,卞约汉,市原隼人,胜野洋,加藤清史郎,南沙良,宫崎美子,佐藤浩市,鹤见辰吾,八木亚里纱,横田荣司</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/81904/" title="探索发现2021" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210501-1/13219e12e971e2c8f126104d43610c78.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至20210813期</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/81904/" title="探索发现2021">探索发现2021</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">任志宏</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86979/" title="盘丝洞" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/21f4f4a0846f5b62a3f52dcec81825c6.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">1080P</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86979/" title="盘丝洞">盘丝洞</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">殷明珠,吴文超,夏佩珍,蒋梅康,周鸿泉</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86978/" title="2008年第29届北京奥运会开幕式" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/3391653731dfcedecae89f487eec0f53.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">4K修复</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86978/" title="2008年第29届北京奥运会开幕式">2008年第29届北京奥运会开幕式</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">周涛,李宁,郎朗,林妙可</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86976/" title="狐妖小红娘·月红2" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/c58c270bd76d7389ffaab48838670fea.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">1080P</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86976/" title="狐妖小红娘·月红2">狐妖小红娘·月红2</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86975/" title="怪物猎人：公会传奇" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/0be7dc7d881290d239f735e76c6b3c36.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">1080P</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86975/" title="怪物猎人：公会传奇">怪物猎人：公会传奇</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">布兰登·伊顿,凯伦·斯特拉斯曼,史蒂芬·克雷默·格利克曼,Brian Beacock,凯蒂·丽</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86974/" title="谤法：在此矣" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/4cf1d9766d64569db77bf775fcda4925.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">1080P</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86974/" title="谤法：在此矣">谤法：在此矣</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">严志媛,吴允儿,李雪,延尚昊</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86973/" title="密室逃生2" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210813-1/abc421cef60426554b00d96b06ed62a1.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">TC抢先版</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86973/" title="密室逃生2">密室逃生2</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">泰勒·拉塞尔,洛根·米勒,托马斯·康奎尔,霍兰·罗登,茵蒂娅·摩尔</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86947/" title="韩公主" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210813-1/e69d01ada2aaf562427c4e45ee3c7ca6.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">1080P</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86947/" title="韩公主">韩公主</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">千禹熙,郑仁仙,金素英,李英兰,金崔龙俊</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86946/" title="赘婿之吉兴高照" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210813-1/f7dd518461f16ebfa51ae7719964e93c.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">1080P</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86946/" title="赘婿之吉兴高照">赘婿之吉兴高照</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">刘冠麟,王祉萱,岳旸,戴向宇,韩承羽,海波,胡丹丹,曹曦月,张净桐,沈浩,陈冠英,姚一奇,</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86945/" title="新·福音战士剧场版：终" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210812-1/9a9588e33ceb66d266effac83e3d7a6c.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">1080P</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86945/" title="新·福音战士剧场版：终">新·福音战士剧场版：终</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">林原惠美,绪方惠美,宫村优子,石田彰</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86944/" title="随烟而散" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210812-1/67ac95282af03583dde330e96cc093fb.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">超清</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86944/" title="随烟而散">随烟而散</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">王笙,荣帅,许佳程,向璧莹,张宝华</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86943/" title="瑞喜爱小白" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210812-1/8f90279bbb4c985a1c959282127dc457.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">超清</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86943/" title="瑞喜爱小白">瑞喜爱小白</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">程愫,白妤霏,徐洪浩,朱景芳,赵与之,祁丽珠</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86942/" title="泰味儿" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210812-1/5b115f15fc46a1546bc87028784fc32e.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">超清</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86942/" title="泰味儿">泰味儿</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">高晓攀,吕一,李勤勤,李子雄,廖威廉,郝泽嘉,梁天,娜仁花</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86941/" title="夏夜骑士" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210812-1/be58883c3db8a091cf2c4f8af5908e1e.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">超清</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86941/" title="夏夜骑士">夏夜骑士</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">杨曾曦,康钰潇,罗世平,马炼,黄璐,林路迪,纪凌尘</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86940/" title="追球" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210812-1/dc2450ec515e108ccb955d12bdf41110.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">超清</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86940/" title="追球">追球</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">张雪迎,杨骐嘉,王康,秦琦杰,王小米,王明帅</p>
+			</div>
+		</div>															
+									</li>
+															</ul>	
+							</div>
+						</div>				
+					</div>
+					<ul class="stui-page text-center clearfix">
+			<li><a href="/vodtype/1-1/">首页</a></li>
+			<li><a href="/vodtype/1-1/">上一页</a></li>							
+				<li class="hidden-xs active"><a href="/vodtype/1-1/">1</a></li>
+				<li class="hidden-xs "><a href="/vodtype/1-2/">2</a></li>
+				<li class="hidden-xs "><a href="/vodtype/1-3/">3</a></li>
+				<li class="hidden-xs "><a href="/vodtype/1-4/">4</a></li>
+				<li class="hidden-xs "><a href="/vodtype/1-5/">5</a></li>
+				<li class="active visible-xs"><span class="num">1/329</span></li>
+			<li><a href="/vodtype/1-2/">下一页</a></li>
+			<li><a href="/vodtype/1-329/">尾页</a></li>							
+		</ul>
+			
+		        </div>
+		    </div>
+		    
+		<!-- 页面底部 （可复制） -->
+		<div class="foot">
+			<div class="col-md-12 column item-foot">
+				<p class="text-center">
+					 <em>免责声明：</em> VIP影院所有视频均来自互联网收集而来，版权归原创者所有，如果侵犯了你的权益，请通知我们，我们会及时删除侵权内容，谢谢合作。
+				</p>
+				<p class="text-center">
+					 <em>版权声明：</em> VIP影院是一个免费看电影非赢利性的网站，本站所有内容均来源于互联网相关站点自动搜索采集信息，相关链接已经注明来源。
+				</p>
+				<p class="text-center">
+					Copyright © 2021 · VIP影院 版权所有 · 版权反馈邮箱:88888888@gmail.com
+				</p>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>

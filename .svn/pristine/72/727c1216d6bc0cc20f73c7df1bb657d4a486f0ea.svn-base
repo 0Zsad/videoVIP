@@ -1,0 +1,53 @@
+//校验
+$("#username").blur(function() {
+	var name = $("#username").attr("value");
+	var regName = /^[A-Za-z0-9]{4,30}$/.test(name);
+	if ( name == "") {
+		$("#namePrompt").attr("placeholder","用户名");
+	} else if(regName == false){
+		$("#namePrompt").attr("placeholder","用户名错误(至少四位字母或数字)");
+	}else {
+		$("#namePrompt").attr("placeholder","用户名");
+	}
+});
+
+$("#password").blur(function() {
+	var pwd = $("#password").attr("value");
+	var regPwd = /^[A-Za-z0-9]{4,30}$/.test(pwd);
+	if (pwd == "") {
+		$("#pwdPrompt").attr("placeholder","密码");
+	} else if( regPwd == false){
+		$("#pwdPrompt").attr("placeholder","密码错误(至少四位字母或数字)");
+	} else {
+		$("#pwdPrompt").attr("placeholder","密码");
+	}
+});
+
+function register(){
+	if(checkYhm() && checkPwd()){
+		var url = "/videoVIP/RegisterController/register.do";
+		var params = {
+			yhm:form2.yhm.value,
+			pwd:form2.pwd.value,
+			yhnc:form2.yhnc.value
+		}
+		$.post(url,params,function(user){
+			if(null == user && "" == user) {// 为空说明该用户不存在，注册成功
+				// 登录成功，将user转成json字符串存放在sessionStorage中，方便在其他页面使用user
+				sessionStorage.setItem("user",JSON.stringify(user));
+				alert("注册成功！");
+				// 跳转到用户登录界面
+				location = "/videoVIP/pages_userLogin/login.html";
+			}else {//user值不为空，说明该用户已存在
+				alert("用户已存在！");
+			}
+		});
+	}
+}
+
+$("#register").click(function(){
+	register();
+});
+
+
+

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="./css/login.css" /> 
+	</head>
+	<body>
+		<div class="bg bg-blur"></div>
+		<div class="dowebok">
+			<form action="" name="form3">
+				<div class="logo">
+					<img src="img/admin.png" />
+					<p>欢迎亲爱的管理员大人</p>
+				</div>
+				<div class="form-item">
+					<input id="username" type="text" autocomplete="off" placeholder="账号">
+				</div>
+				<div class="form-item">
+					<input id="password" type="password" autocomplete="off" placeholder="密码">
+				</div>
+				<div class="form-item">
+					<button id="login">登 录</button>
+				</div>
+				<div class="reg-bar">
+					<a class="reg" href="../pages_register/register.html" target=_blank>立即注册</a>
+					<a class="forget" href="#">忘记密码</a>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

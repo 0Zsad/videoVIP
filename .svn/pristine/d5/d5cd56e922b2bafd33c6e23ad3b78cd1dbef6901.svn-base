@@ -1,0 +1,33 @@
+/********************* 视频分类Ajax遍历视频封面 ********************/
+url = "/videoVIP/SpbController/list.do"
+pram = {
+	sp:1
+}
+
+function getdata(url,pram){
+	pagedata = [];
+	$.ajax({
+		type:"post",
+		url:url,
+		data:pram,
+		dataType:"json",
+		async:false,	//关闭异步
+		success:function(data){
+			pagedata = data;
+			var zy = '';
+			for(i = 0;i < 12;i++){
+			  zy +=	'<div class="col-md-2 item-img">'
+				 +	'<div class="thumbnail">'
+				 +	'<a href="/videoVIP/pages_xq/spxq.html?spid='+data[i].spid+'"><img alt="....." src="../'+ data[i].spfm +'" /></a>'
+				 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+				 +	'</div>'
+				 +	'</div>'
+			}
+			$(".item-spfl").append(zy);
+			loadflag = true;
+		}
+	})
+	return pagedata;
+}
+
+spdatas = getdata(url,pram)

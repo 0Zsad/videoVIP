@@ -1,0 +1,58 @@
+//校验
+$("#username").blur(function() {
+	var name = $("#username").attr("value");
+	var regName = /^[A-Za-z0-9]{4,30}$/.test(name);
+	if ( name == "") {
+		$("#namePrompt").attr("placeholder","用户名");
+	} else if(regName == false){
+		$("#namePrompt").attr("placeholder","用户名错误(至少四位字母或数字)");
+	}else {
+		$("#namePrompt").attr("placeholder","用户名");
+	}
+});
+
+$("#password").blur(function() {
+	var pwd = $("#password").attr("value");
+	var regPwd = /^[A-Za-z0-9]{4,30}$/.test(pwd);
+	if (pwd == "") {
+		$("#pwdPrompt").attr("placeholder","密码");
+	} else if( regPwd == false){
+		$("#pwdPrompt").attr("placeholder","密码错误(至少四位字母或数字)");
+	} else {
+		$("#pwdPrompt").attr("placeholder","密码");
+	}
+});
+
+function doLogin(){
+	if(checkYhm() && checkPwd()){
+		var url = "/videoVIP/LoginController/doLogin.do";
+		var params = {
+			yhm:form3.yhm.value,
+			pwd:form3.pwd.value
+		}
+		$.post(url,params,function(user){
+			if(null != user && "" != user) {// 不为空说明该用户存在，登录成功
+				// 登录成功，将user转成json字符串存放在sessionStorage中，方便在其他页面使用user
+				sessionStorage.setItem("user",JSON.stringify(user));
+				// 跳转到用户界面
+				location = "/videoVIP/pages_admin/admin.html";
+			}else {//user值为空，说明该用户不存在，用户名或密码有误，重新登录
+				alert("账号或密码错误！");
+			}
+		});
+	}
+}
+
+$("#login").click(function(){
+	doLogin();
+});
+
+//判断如果按下Enter回车键，则登录
+$(document).keydown(function(e){
+	e = e || window.event
+	if(e.keyCode == 13){//Enter键对应键值为13
+		doLogin();
+	}
+});
+
+

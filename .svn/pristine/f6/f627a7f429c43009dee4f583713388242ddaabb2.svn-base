@@ -1,0 +1,41 @@
+var collflag = true; 	//收藏标志
+bgc = "";				//按键颜色
+yhzh = "0000";			//用户账号
+$("#collbtn").click(function(){
+	if(collflag){
+		sc();
+	}else{
+		qxsc();
+	}
+})
+
+// ajax收藏
+function sc(){
+	url = "/videoVIP/ScbController/add.do";
+	parm = {
+		"yhzh":"0000",
+		"scsj":new Date().toLocaleDateString(),
+		"spid":spid
+	}
+	$.post(url,parm,function(data){
+		// 成功执行函数
+		bgc = "gray";
+		collflag = false;
+		$("#collbtn").css("background-color",bgc)
+	})
+}
+
+// ajax取消收藏（有问题）
+function qxsc(){
+	url = "/videoVIP/ScbController/deleteById.do";
+	parm = {
+		"yhzh":yhzh,
+		"spid":spid
+	}
+	$.post(url,parm,function(data){
+		// 成功执行函数
+		bgc = "#00FFFF";
+		collflag = true;
+		$("#collbtn").css("background-color",bgc)
+	})
+}

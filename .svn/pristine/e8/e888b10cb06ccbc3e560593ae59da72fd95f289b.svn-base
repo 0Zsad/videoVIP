@@ -1,0 +1,61 @@
+/**************全部ajax遍历**********************/
+$(function(){
+	doList();
+})
+
+function doList(){
+	$.ajax({
+		type:"post",
+		url:"/videoVIP/ScbListController/list.do",
+		dataType:"json",
+		success:function(data){
+			//查询前清空
+			$(".item-img").empty();
+			var zy = '';
+			for(i = 0; i < data.length; i++){
+			  zy +=	'<div class="col-md-3">'
+				 +	'<div class="thumbnail">'
+				 +	'<a href="/videoVIP/pages_xq/spxq.html?spid='+data[i].spid+'"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+				 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+				 +	'<a class="btn btn-danger" onclick="doDelete(\''+data[i].spid+'\')">删除</a>'
+				 +	'</div>'
+				 +	'</div>'
+			}
+			$(".item-img").append(zy);
+		}
+	});
+}
+
+function doDelete(id){
+	//alert(id);
+	$.post("/videoVIP/ScbController/deleteById.do",
+		{
+			spid:id
+		},
+		function(ret){
+			if(ret == false){
+				alert("删除失败！");
+			}else{
+				alert("删除成功！");
+				doList();
+			}
+		});
+}
+
+//需要得到yhzh
+var zh = "zhongjin";
+function doDeleteAll(){
+	$.post("/videoVIP/ScbController/deleteCleanAll.do",
+		{
+			yhzh:zh
+		},
+		function(ret){
+			if(ret == false){
+				alert("删除失败！");
+			}else{
+				alert("删除成功！");
+				doList();
+			}
+		});
+}
+

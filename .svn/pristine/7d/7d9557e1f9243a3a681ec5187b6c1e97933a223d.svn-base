@@ -1,0 +1,40 @@
+/*************************** 导航条 ************************************/
+@media screen and (min-width: 1480px) {
+	.container{
+		width: 1480px;
+	}
+}
+
+#nav1{
+	width: 1480px;
+	margin: 0 auto;
+	background-color: lightcyan;
+}
+
+.head{
+	height: 52px;
+	background-color: lightcyan;
+}
+
+#nav1 a{
+	color: #000000;
+}
+
+/*导航栏搜索框*/
+#nav-text{
+	width: 250px;
+}
+
+/*************************** 主体 ************************************/
+/*广告*/
+.gg{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*热播右侧图片尺寸*/
+.img-size img{
+	height: 150px;
+}
+
+/*************************** 底部 ************************************/

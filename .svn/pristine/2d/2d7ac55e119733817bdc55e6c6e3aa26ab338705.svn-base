@@ -1,0 +1,24 @@
+package com.lanqiao.videoVIP.mapper;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.apache.ibatis.annotations.CacheNamespace;
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.SelectProvider;
+
+import com.lanqiao.videoVIP.entity.Scb;
+
+@CacheNamespace
+public interface ScbMapper {
+
+	@Insert("insert into scb(yhzh,scsj,spid) values(#{},)")
+	boolean add(Scb scb);
+
+	@Delete("delete from scb where spid = #{spid}")
+	boolean deleteById(Serializable spid);
+
+	@SelectProvider(type = ScbProvide.class, method = "getListSql")
+	List<Scb> list(Scb sp);
+}

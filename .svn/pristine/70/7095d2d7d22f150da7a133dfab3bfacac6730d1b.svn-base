@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/adminpwdUpdate.css" />
+	</head>
+	<body>
+		<div class="body">
+			<form name="form1">
+				<table width="100%" cellspacing="0">
+					<tr>
+						<td colspan="2" style="text-align: center;color: red;" id="tip">&nbsp;</td>
+					</tr>
+					<tr>
+						<td><input name="glypwd" id="glypwd" placeholder="新的密码" onblur="checkPwd()" /><span>*</span></td>
+					</tr>
+					<tr>
+						<td><input id="glypwd2" placeholder="确认密码" onblur="checkPwd2()" /><span>*</span></td>
+					</tr>
+					<tr>
+						<td colspan="2" id="btnPanel">
+							<input type="button" value="保存" onclick="doUpdate()" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/pages_admin/js/adminpwdUpdate.html.js" type="text/javascript" charset="utf-8"></script>
+</html>

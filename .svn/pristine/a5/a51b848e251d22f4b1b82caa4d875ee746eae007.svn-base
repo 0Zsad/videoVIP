@@ -1,0 +1,57 @@
+/*全局超链接样式*/
+a{
+	text-decoration: none !important;
+	color: #000000 !important;
+}
+
+a:hover{
+	color: orange !important;
+}
+
+/*************************** 导航条 ************************************/
+@media screen and (min-width: 1480px) {
+	.container{
+		width: 1480px;
+	}
+} 
+
+#nav1{
+	height: 52px;
+	width: 1480px;
+	margin: 0 auto;
+	background-color: whitesmoke;
+	border-bottom: 3px solid orange;
+}
+
+.head{
+	height: 52px;
+	background-color: whitesmoke;
+	border-bottom: 3px solid orange;
+}
+
+/*导航栏搜索框*/
+#nav-text{
+	position: relative;
+	width: 250px;
+}
+
+/*用户头像*/
+#yhtx{
+	position: relative;
+	top: 6px;
+	right: -560px;
+	font-size: 16px;
+}
+
+#yhtx img{
+	height: 40px;
+	width: 40px;
+}
+
+/*************************** 底部 ************************************/
+.item-foot{
+	padding-top: 70px;
+	padding-bottom: 60px;
+	background-color: whitesmoke;
+	font-size: 16px;
+}

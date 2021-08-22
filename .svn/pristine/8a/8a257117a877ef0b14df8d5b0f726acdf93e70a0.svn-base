@@ -1,0 +1,41 @@
+//失去焦点
+$("#yhzh").on("blur", function() {
+})
+
+$("#yhzt").on("blur", function() {
+})
+
+$("#yhnc").on("blur", function() {
+})
+
+$("#submit").click(function() {
+	mhselect();
+})
+
+/** 模糊查询*/
+function mhselect(){
+	$.get("/videoVIP/YhbController/mhselectSql.do", {
+		yhzh: $("#yhzh").val(),
+		yhzt: $("#yhzt").val(),
+		yhnc: $("#yhnc").val(),
+	}, function(yhbs) {
+		if (null != yhbs && yhbs.length > 0) {
+			$("#table0").empty();
+			for (i = 0; i < yhbs.length; i++) {
+				var yhb = yhbs[i];
+				$("#table0").append(
+					$("<tr>")
+					.append($("<td>").html(i + 1))
+					.append($("<td>").html(yhb.yhzh))
+					.append($("<td>").html(yhb.yhnc))
+					.append($("<td>").html(yhb.yhzt))
+					.append(
+						$("<td>")
+						.append("<a onclick='doUpdate(\"" + yhb.yhzh + "\")'>修改</a> ")
+						.append("<a onclick='doDelete(\"" + yhb.yhzh + "\")'>删除</a> ")
+					)
+				);
+			}
+		}
+	}, "json")
+}

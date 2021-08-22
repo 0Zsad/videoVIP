@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" type="text/css" href="./css/scsp.css"/>
+	</head>
+	<body class="bg">
+		<div class="head">
+			<p>收藏视频</p>
+		</div>
+		<div class="body" >
+			<table width="100%" cellspacing="0" id="table1">
+				<tr>
+					<th width="20%">用户账号</th>
+					<th width="30%">视频编号</th>
+					<th width="30%">收藏时间</th>
+					<th width="20%">操作</th>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script src="../js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+	$.ajax({
+		type:"post",
+		url:"/videoVIP/ScbController/list.do",
+		dateType:"json",
+		success:function(data){
+			var sp = '';
+			for(i=1;i<data.length+1;i++){
+				sp += '<tr id="sp'+i+'">'
+				+'<td>'+data[i-1].yhzh+'</td>'
+				+'<td>'+data[i-1].spid+'</td>'
+				+'<td>'+data[i-1].scsj+'</td>'
+				+'<td><a onclick="doDelete()">删除</a></td>'
+				+'</tr>';
+			}
+			$("#table1").append(sp);
+		}
+	})
+	
+	function doDelete(){
+		$.post("/videoVIP/ScbController/deleteById.do",{yhzh:id},function(ret){
+			if(ret == true){
+				alert("删除成功！");
+				location.href = "/videoVIP/pages_user/scsp.html";
+			}else{
+				alert("删除失败！");
+			}
+		});
+	}
+	</script>
+</html>

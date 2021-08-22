@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+	</head>
+	<body>
+		<a href="video.html?spid=1">播放视频</a><br>
+		<a href="video.html?spid=23">播放视频</a><br>
+	</body>
+</html>

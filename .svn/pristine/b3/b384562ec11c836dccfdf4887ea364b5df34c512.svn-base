@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>用户页面</title>
+	<link rel="stylesheet" type="text/css" href="css/admin.css"/>
+	<link rel="stylesheet" type="text/css" href="/videoVIP/bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/videoVIP/css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="/videoVIP/css/nav-foot.css"/>
+	<!-- 字体图标 -->
+	<link rel="stylesheet" type="text/css" href="/videoVIP/font-awesome-4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+	<!-- 页面头部（可复制） -->
+		<div class="head">
+			<!-- 导航条部分开始 -->
+			<nav class="navbar navbar-default navbar-static-top" id="nav1">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand glyphicon glyphicon-film" href="/videoVIP/index.html"></a>
+			      <a class="navbar-brand" href="/videoVIP/index.html" id="vip">VIP影院</a>
+			    </div>
+			  	
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li >
+			        	<a href="/videoVIP/index.html">首页 <span class="sr-only">(current)</span></a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/dy.html">电影</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/dm.html">动漫</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/jj.html">剧集</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/zy.html">综艺</a>
+			        </li>
+			      </ul>
+			      <!-- 用户头像 -->
+			      <a href="/videoVIP/pages_Login/userlogin.html" id="yhtx">
+			      	<img src="img/yhtx.jpeg" class="img-circle">
+			      	<span id="">
+			      		登&nbsp;&nbsp;陆
+			      	</span>
+			      </a>
+			      
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" id="nav-text" placeholder="尽情搜索">
+			        </div>
+			        <button type="submit" class="btn btn-info glyphicon glyphicon-search"></button>
+			      </form>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			<!-- 导航条部分结束 -->
+		</div>
+	
+	<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-2 column" >
+					<div id="left">
+						<img style="margin-left: 45px;margin-top: 20px; width: 140px;height: 140px;" alt="头像" src="img/admin.jpg" class="img-circle" />
+						<h3 class="text-center" style="color: #000000;">
+							用户名
+						</h3>
+						<div id="menu" >
+							<p style="color: #000000;">个人账户<span>∨</span></p>
+							<div style="color: #000000;">
+								<div><a href="accountYhtx.html"  target="cont">修改头像</a></div>
+								<div><a href="userUpdate.html"  target="cont">修改账户信息</a></div>
+							</div>
+							<p style="color: #000000;">视频管理<span>∨</span></p>
+							<div>
+								<div><a href="test.html"  target="cont">收藏视频</a></div>
+								<div><a href="test.html"  target="cont">观看历史</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-10 column">
+					<div style="height: 910px">
+						<iframe src="dataIndex.html" name="cont" width="100%" height="100%" frameborder="no"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 页面底部 （可复制） -->
+		<div class="foot">
+			<div class="col-md-12 column item-foot">
+				<p class="text-center">
+					 <em>免责声明：</em> VIP影院所有视频均来自互联网收集而来，版权归原创者所有，如果侵犯了你的权益，请通知我们，我们会及时删除侵权内容，谢谢合作。
+				</p>
+				<p class="text-center">
+					 <em>版权声明：</em> VIP影院是一个免费看电影非赢利性的网站，本站所有内容均来源于互联网相关站点自动搜索采集信息，相关链接已经注明来源。
+				</p>
+				<p class="text-center">
+					Copyright © 2021 · VIP影院 版权所有 · 版权反馈邮箱:88888888@gmail.com
+				</p>
+			</div>
+		</div>
+</body>
+<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/admin.js" type="text/javascript" charset="utf-8"></script>
+</html>

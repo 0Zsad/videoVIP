@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>管理员中心</title>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/admin.css"/>
+</head>
+<body>
+<div id="panel">
+	<!--
+    	描述：左侧-头像、菜单
+    -->
+	<div id="left">
+		<div id="logoTxt"><a href="/videoVIP/index.html">VIDEO VIP</a></div>
+		<div id="photoPanel">
+			<div>
+				<img src="img/guanliyuan.jpg" style="height: 80px;" id="yhtx" alt="个人头像"/>
+				<p><span id="online">●</span><span id="yhm1"> Administrator</span></p>
+			</div>
+		</div>
+		<div id="menu">
+			<p>用户管理<span>∨</span></p>
+			<div>
+				<div><a href="userMgr.html"  target="content">用户维护</a></div>
+				<div><a href="userAdd.html"  target="content">添加用户</a></div>
+			</div>
+			<p>视频管理<span>∨</span></p>
+			<div>
+				<div><a href="/videoVIP/pages_admin/videoMgr.html"  target="content">视频维护</a></div>
+				<div><a href="/videoVIP/pages_admin/videoUpload.html"  target="content">上传视频</a></div>
+			</div>
+			<!-- <p>数据统计<span>∨</span></p>
+			<div>
+				<div><a href="dataIndex.html"  target="content">大数据概览</a></div>
+				<div><a href="test.html"  target="content">用户统计</a></div>
+				<div><a href="test.html"  target="content">视频统计</a></div>
+			</div> -->
+			<p>个人账户<span>∨</span></p>
+			<div>
+				<div><a href="adminpwdUpdate.html"  target="content">修改密码</a></div>
+			</div>
+		</div>
+	</div>
+	<!--
+    	描述：右侧-内容显示区
+    -->
+	<div id="right">
+		<div id="top">
+			<div id="topTxt">
+				<span class="fontColor" id="yhm2">Administrator</span>，欢迎您来访!
+				<a href="/videoVIP/pages_Login/adminlogin.html" style="font-size:14px;text-decoration: none;">[注销]</a>
+			</div>
+		</div>
+		<div id="center">
+			<iframe src="/videoVIP/pages_admin/videoMgr.html" name="content" width="100%" height="100%" frameborder="no"></iframe>
+		</div>
+		<div id="bottom">
+			Copyright © 2021 · VIP影院 版权所有 · 版权反馈邮箱:88888888@gmail.com
+		</div>
+	</div>
+</div>
+</body>
+<script src="/videoVIP/pages_xq/js/UrlParm.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/admin.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var glyzh= UrlParm.parm("glyzh");
+	$("#yhm1").html( glyzh)
+	$("#yhm2").html("管理员:&nbsp"+ glyzh)
+</script>
+</html>

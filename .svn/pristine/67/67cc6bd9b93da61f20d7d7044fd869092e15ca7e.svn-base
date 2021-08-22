@@ -1,0 +1,38 @@
+package com.lanqiao.videoVIP.mapper;
+
+import com.lanqiao.videoVIP.entity.Yhb;
+import com.lanqiao.videoVIP.util.StrUtil;
+
+public class YhbProvider {
+	public String getListSql(Yhb user) {
+		StringBuffer sql = new StringBuffer("select yhzh,pwd,yhnc,yhtx,yhzt from yhb where 1=1 ");
+	
+		/*if(null != user) {
+			if(StrUtil.isNotEmpty(user.getYhzh())) {
+				sql.append(" and yhm like concat('%',#{yhm},'%') ");
+				
+			}
+			if(user.getYhsf() != null) {
+				sql.append(" and yhsf = #{yhsf} ");
+				
+			}
+			if(StrUtil.isNotEmpty(user.getZcsj())) {
+				sql.append(" and zcsj like concat('%',#{zcsj},'%') ");
+				
+			}
+			if(StrUtil.isNotEmpty(user.getSjh())) {
+				sql.append(" and sjh like concat('%',#{sjh},'%') ");
+				
+			}
+			if(StrUtil.isNotEmpty(user.getSex())) {
+				sql.append(" and sex = #{sex} ");
+				
+			}
+			if(StrUtil.isNotEmpty(user.getEmail())) {
+				sql.append(" and email like concat('%',#{email},'%') ");
+			}
+		}*/
+		
+		return sql.toString();
+	}
+}

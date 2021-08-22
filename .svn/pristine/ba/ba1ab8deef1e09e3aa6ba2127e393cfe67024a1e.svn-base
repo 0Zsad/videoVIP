@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="./css/register.css" />
+	</head>
+	<body>
+		<form action="">
+			<h3>用户注册：</h3>
+			<hr>
+			<p>账号：<span class="a" id="as"><input type="text" required placeholder autofocus></span>
+				<hr>
+			</p>
+			<p>密码：<span class="a" id="as"><input type="password" required placeholder></span>
+				<hr>
+			</p>
+			<p>昵称：<span class="a" id="as"><input type="text" required placeholder></span>
+				<hr>
+			</p>
+			<center>
+				<button class="reg" type="submit">立即注册</button>
+			</center>
+		</form>
+	</body>
+</html>

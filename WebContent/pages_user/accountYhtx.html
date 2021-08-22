@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>头像上传</title>
+	<style>
+		input{border-radius:5px;background-color:#5BC0DE}
+		#pic{width:180px;}
+		#upload{width:100px;padding:2px 25px}
+		#showInfo{color:red}
+		#box{text-align:center;margin:auto}
+		#yhtx{width:300px;height:300px;border-radius:5px;border:solid 6px gray;}
+		#center{
+			padding-left:38%;
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="showInfo">&nbsp;</div>
+	<div id="box">
+		<img id="yhtx" src="img/admin.jpg" alt="个人头像" >
+		<p>个人头像</p>
+	</div>
+	<div id="center">
+		<form enctype="multipart/form-data" name="form1">
+			<input type="file" name="yhtx" id="pic" accept="image/*"/>
+			<input type="button" value="上 传" id="upload"/>
+		</form>
+	</div>
+</body>
+<script src="../js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+// 获取 sessionStorage 中的用户信息
+var yh = sessionStorage.getItem("user");
+var user = JSON.parse(yh);
+
+//页面加载完毕，显示用户头像
+$(function(){
+	if(user.yhtx != null && user.yhtx != ''){
+		$("#yhtx").attr("src","/videoVIP/file/"+user.yhtx);
+	}
+});
+
+</script>
+<script type="text/javascript">
+$("#upload").click(function(){
+	var reg = /\.(png|jpg|jpeg|bmp)$/;	//支持的图片格式
+	var tx = $("#pic").val();			//获取图片名
+	if(tx == ""){
+		$("#showInfo").html("请选择图片");
+	}else if(reg.test(tx) == false){
+		$("#showInfo").html("图片格式不正确（支持png、jpg、jpeg、 bmp等格式）");
+	}else{
+		$("#showInfo").html("&nbsp;");
+		// Ajax 请求
+		$.ajax({
+			type:"POST",											
+			url:"/videoVIP/FileUploadController/uploadYhtx.do?yhzh="+user.yhzh,
+			data:new FormData(form1),								// 提交数据
+			processData: false,  									// 告诉jQuery不要去处理发送的数据
+			contentType: false,   									// 告诉jQuery不要去设置Content-Type请求头
+			success:function(fileName){
+				if(fileName != null && fileName != ""){
+					var pic = "/videoVIP/file/"+fileName;;
+					// 更新父窗口中的用户图像（就是页面左上角头像）
+					window.parent.document.getElementById("item-yhtx").src = pic;
+					$("#yhtx").attr("src",pic);
+					
+					// 更新 sessionStorage
+					user.yhtx = fileName;
+					sessionStorage.setItem("user",JSON.stringify(user));// 将更新后的用户信息重新放进sessionStorage
+				}else{
+					$("#showInfo").html("头像更新失败！");
+				}
+			}
+		});
+	}
+});
+</script>
+</html>

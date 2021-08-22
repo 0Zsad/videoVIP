@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/iconfont.css" type="text/css" />
+		<link rel="stylesheet" href="./css/stui_block.css" type="text/css" />
+		<link rel="stylesheet" href="./css/stui_default.css" type="text/css" />
+		<link rel="stylesheet" href="./css/stui_block_color.css" type="text/css" />
+		<script type="text/javascript" src="./js/home.js"></script>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/stui_block.js"></script>
+		<script type="text/javascript" src="./js/stui_default.js"></script>
+	</head>
+	<body>
+		 <div class="container">
+		        <div class="row">
+		            <div class="stui-pannel stui-pannel-bg clearfix">
+						<div class="stui-pannel-box">
+							<div class="stui-pannel_hd">
+								<div class="stui-pannel__head active bottom-line clearfix">
+									<h3 class="title">
+										<img src="/statics/icon/icon_27.png" alt="最新动漫资源列表"/>
+										最新动漫							</h3>
+									<!-- <ul class="nav nav-tabs">
+										<li  class="active"><a  href="/vodshow/4--time---------/">最新更新</a></li>
+										<li ><a  href="/vodshow/4--hits---------/">最近热播</a></li>
+									</ul> -->
+								</div>
+								<ul class="stui-screen__list type-slide bottom-line-dot clearfix">
+		
+									<li  class="active"><a  href="/vodshow/4--time---------/">最新更新</a></li>
+									<li ><a  href="/vodshow/4--hits---------/">最近热播</a></li>
+								</ul>
+								<ul class="stui-screen__list type-slide bottom-line-dot clearfix">
+															</ul>
+								<ul class="stui-screen__list type-slide bottom-line-dot clearfix">
+									<li>
+										<span class="text-muted">按地区</span>
+									</li>
+															        <li><a   href="/vodshow/4-%E4%B8%AD%E5%9B%BD%E5%A4%A7%E9%99%86----------/">中国大陆</a></li>
+								        						        <li><a   href="/vodshow/4-%E6%97%A5%E6%9C%AC----------/">日本</a></li>
+								        						        <li><a   href="/vodshow/4-%E7%BE%8E%E5%9B%BD----------/">美国</a></li>
+								        						</ul>
+								<ul class="stui-screen__list type-slide clearfix">
+									<li>
+										<span class="text-muted">按年份</span>
+									</li>
+							        				                <li><a  href="/vodshow/4-----------2021/">2021</a></li>
+						                				                <li><a  href="/vodshow/4-----------2020/">2020</a></li>
+						                				                <li><a  href="/vodshow/4-----------2019/">2019</a></li>
+						                				                <li><a  href="/vodshow/4-----------2018/">2018</a></li>
+						                				                <li><a  href="/vodshow/4-----------2017/">2017</a></li>
+						                				                <li><a  href="/vodshow/4-----------2016/">2016</a></li>
+						                				                <li><a  href="/vodshow/4-----------2015/">2015</a></li>
+						                				                <li><a  href="/vodshow/4-----------2014/">2014</a></li>
+						                				                <li><a  href="/vodshow/4-----------2013/">2013</a></li>
+						                				                <li><a  href="/vodshow/4-----------2012/">2012</a></li>
+						                				                <li><a  href="/vodshow/4-----------2011/">2011</a></li>
+						                				                <li><a  href="/vodshow/4-----------2010/">2010</a></li>
+						                				                <li><a class="hide" href="/vodshow/4-----------2009/">2009</a></li>
+						                				                <li><a class="hide" href="/vodshow/4-----------2008/">2008</a></li>
+						                				                <li><a class="hide" href="/vodshow/4-----------2007/">2007</a></li>
+						                				                <li><a class="hide" href="/vodshow/4-----------2006/">2006</a></li>
+						                				                <li><a class="hide" href="/vodshow/4-----------2005/">2005</a></li>
+						                				                <li><a class="hide" href="/vodshow/4-----------2004/">2004</a></li>
+						                							
+								</ul>	
+							</div>
+		
+		
+							<!-- 排序 -->
+		<!--					<div class="stui-pannel_hd">-->
+		<!--						<div class="stui-pannel__head active bottom-line clearfix">-->
+		<!--							<ul class="nav nav-head">-->
+		<!--								<li  class="active"><a href="/vodshow/4--time---------/">按时间</a></li>-->
+		<!--								<li ><a href="/vodshow/4--hits---------/">按人气</a></li>-->
+		<!--								<li ><a href="/vodshow/4--score---------/">按评分</a></li>-->
+		<!--							</ul>-->
+		<!--						</div>-->
+		<!--					</div>-->
+							<!-- end 排序 -->
+							<div class="stui-pannel_bd">
+								<ul class="stui-vodlist clearfix">
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/49038/" title="斗罗大陆" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20200313-18/21d77ce6e3fecbbc77ddf76fbf966d30.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新169集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/49038/" title="斗罗大陆">斗罗大陆</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">沈磊,程玉珠,黄翔宇,王肖兵</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85484/" title="猫头鹰魔法社第二季" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210630-1/929fdbec8629316f52cfdf502fd9e819.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至08集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85484/" title="猫头鹰魔法社第二季">猫头鹰魔法社第二季</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/81212/" title="致不灭的你" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210413-1/0fd37804d940167fb1e8ac8e335a5f77.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至17集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/81212/" title="致不灭的你">致不灭的你</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">川岛零士,引坂理绘,内田彩,爱河里花子,斋贺光希,津田健次郎</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/80983/" title="万界独尊" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210406-1/4e33fa6be9f5340388d842b31a563e89.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至40集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/80983/" title="万界独尊">万界独尊</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">王大伟,蘭雨馨,柳知萧,冷泉月夜,音匣老鬼,森中人</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85599/" title="元龙第二季" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210703-1/6daa36c7584459aeac943b94b3c411b1.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至第9集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85599/" title="元龙第二季">元龙第二季</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/75196/" title="万古神王" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20201003-1/6b634a39b8fa1d97533dc550c481f02c.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至60集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/75196/" title="万古神王">万古神王</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85645/" title="我，小怼" data-original="https://img.52swat.cn/upload/vod/20210703-1/c840c3824933e986ccb8cb6c0f84e224.webp">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至7集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85645/" title="我，小怼">我，小怼</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/73247/" title="异世界中药铺" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20200804-1/ccf8e01eb68cc9cd93fd97fa841e640f.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至75集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/73247/" title="异世界中药铺">异世界中药铺</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85882/" title="星河至尊" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210708-1/dbde60682ba2ca8633f77e0d8bcc5d7e.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至23集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85882/" title="星河至尊">星河至尊</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">史克郎君,陆敏悦,关帅,宴宁,张妮,冷泉夜月,安志,钟巍</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86149/" title="干物妹!小埋R中配版" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210717-1/95b017b170b7bd9e9decd806cd37f3e7.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至10集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86149/" title="干物妹!小埋R中配版">干物妹!小埋R中配版</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">田中爱美,野岛健儿,影山灯,白石晴香,古川由利奈,安元洋贵,柿原彻也,小清水亚美,井上喜久子,冈本信彦,水濑祈</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/59338/" title="万界神主" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20200702-1/89edec3f968a986d5fe21c9f496810e9.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至154集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/59338/" title="万界神主">万界神主</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85152/" title="龙王殿" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210621-1/bb1187e9e220be3db89fe88bf6ff52cc.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至21集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85152/" title="龙王殿">龙王殿</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85151/" title="前无古人" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210621-1/98cc4196f3cbda8e5db38357845b1684.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至21集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85151/" title="前无古人">前无古人</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85835/" title="吃鸡大作战第四季" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210707-1/6897770148df628693f6bb003597d088.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至15集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85835/" title="吃鸡大作战第四季">吃鸡大作战第四季</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/83251/" title="狂神魔尊" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210522-1/2a52faadd1f4c29779f2712be291c8b5.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至34集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/83251/" title="狂神魔尊">狂神魔尊</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">吴浩,张英,张棠溪,小林,周杭</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/79649/" title="逆天邪神第二季" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210212-1/bce40b15917120eabb498eb68b4937c7.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至29集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/79649/" title="逆天邪神第二季">逆天邪神第二季</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内详</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85603/" title="女友成双" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210703-1/224cbab178e510b77c7a3981d3627cfa.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至07集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85603/" title="女友成双">女友成双</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">榎木淳弥,佐仓绫音,和气杏未,竹达彩奈,高桥李依</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85602/" title="转生成为了只有乙女游戏破灭Flag的邪恶大小姐第二季" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210703-1/42b04b7443c54dad27a02e88664d4a40.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至07集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85602/" title="转生成为了只有乙女游戏破灭Flag的邪恶大小姐第二季">转生成为了只有乙女游戏破灭Flag的邪恶大小姐第二季</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">内田真礼,冈咲美保,水濑祈,早见沙织,和气杏未,松冈祯丞,铃木达央,柿原彻也,苍井翔太,增田俊树,子安武人,上坂堇,白井悠介,小仓唯,鸟海浩辅</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/85601/" title="瓦尼塔斯的笔记" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210703-1/da0b23394f64ceb6380e8e23900798e9.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至07集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/85601/" title="瓦尼塔斯的笔记">瓦尼塔斯的笔记</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">花江夏树,石川界人</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/86983/" title="SAKUGAN" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20210814-1/add2c8965c146a6fc5830f3be33efd04.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至01集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/86983/" title="SAKUGAN">SAKUGAN</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">丰永利行,东地宏树,花泽香菜,天希花音</p>
+			</div>												
+		</div>															
+									</li>
+																<li class="col-md-7 col-sm-4 col-xs-3">
+										<div class="stui-vodlist__box stui-vodlist__bg">
+			<a class="stui-vodlist__thumb lazyload" href="/voddetail/75171/" title="勇者斗恶龙：达尔的大冒险新作动画" data-original="https://pic.iqiyipic.com.hudonghezi.com/img/upload/vod/20201003-1/624648b9fe01d717523d75b8ba0fe159.jpg">						
+				<span class="play hidden-xs"></span>		
+				<span class="pic-text text-right">更新至44集</span>
+			</a>									
+			<div class="stui-vodlist__detail active">
+				<h4 class="title text-overflow"><a href="/voddetail/75171/" title="勇者斗恶龙：达尔的大冒险新作动画">勇者斗恶龙：达尔的大冒险新作动画</a></h4>
+				<p class="text text-overflow text-muted hidden-xs">种崎敦美,丰永利行,小松未可子,早见沙织,樱井孝宏,梶裕贵</p>
+			</div>
+		</div>															
+									</li>
+															</ul>	
+							</div>
+						</div>				
+					</div>
+					<ul class="stui-page text-center clearfix">
+			<li><a href="/vodtype/4-1/">首页</a></li>
+			<li><a href="/vodtype/4-1/">上一页</a></li>							
+				<li class="hidden-xs active"><a href="/vodtype/4-1/">1</a></li>
+				<li class="hidden-xs "><a href="/vodtype/4-2/">2</a></li>
+				<li class="hidden-xs "><a href="/vodtype/4-3/">3</a></li>
+				<li class="hidden-xs "><a href="/vodtype/4-4/">4</a></li>
+				<li class="hidden-xs "><a href="/vodtype/4-5/">5</a></li>
+				<li class="active visible-xs"><span class="num">1/35</span></li>
+			<li><a href="/vodtype/4-2/">下一页</a></li>
+			<li><a href="/vodtype/4-35/">尾页</a></li>							
+		</ul>
+			
+		        </div>
+		    </div>
+	</body>
+</html>

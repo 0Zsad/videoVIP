@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户观看历史页面</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/gkls.css"/>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h3 class="text-left">
+						<i class="fa fa-arrows-alt" aria-hidden="true"></i> 
+						<i>历史记录</i>
+					</h3>
+					<div class="panel panel-info">
+						<h4>
+							<strong><i class="fa fa-sticky-note-o" aria-hidden="true"></i></i> 最近记录</strong>
+							<span style="margin-left: 20px;">
+								<input id="clearall" type="button" class="btn btn-danger" value="清除所有记录" />
+							</span>
+						</h4>
+						<div class="row item-gkls1" id="gkls1">
+							<!-- data -->
+						</div>
+						<h4>
+							<strong><i class="fa fa-sticky-note-o" aria-hidden="true"></i> 更早记录</strong>
+						</h4>
+						<div class="row item-gkls2" id="gkls2">
+							<!-- data -->
+						</div>
+						<!-- 结束 -->
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/gkls.js" type="text/javascript" charset="utf-8"></script>
+</html>

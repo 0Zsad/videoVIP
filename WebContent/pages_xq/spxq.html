@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频详情页</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/nav-foot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/spxq.css"/>
+		<!-- import CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!-- 页头 -->
+		<div class="head"></div>
+		
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-9 column">
+					<div class="item-img-gg">
+						<img src="img/img-gg.gif"/>
+					</div>
+					<div class="row clearfix">
+						<div class="col-md-3 column">
+							<div class="item-spfm" style="width: 220px; height: 260px;">
+								<img id="fmimg" alt="图片加载失败" width="220px" height="260px" src="" />
+							</div>
+						</div>
+						<div class="col-md-9 column item-info" id="coll">
+							<h3 id="spname">片名：</h3>
+							<p id="sptype">类型：</p>
+							<p id="spdq">地区：</p>
+							<p id="sptime">时间：</p>
+							<p id="spjj">简介：</p>
+							<input id="bfbtn" type="button" class="btn btn-warning item-button" value="立即播放" />
+							<input id="scbtn" onclick="add()" @click="errormessage" type="button" class="btn btn-warning" value="点击收藏" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-3 column">
+					<div class="item-phb">
+						<h3>
+							<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+							排行榜
+						</h3>
+					</div>
+					<table>
+						<tbody class="item-biaoge" id="rank">
+							<!-- data -->
+							<!-- <tr>
+								<td>1</td>
+								<td><a href="#">data</a></td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="col-md-12 column">
+					<div class="item-tuijian">
+						<h3>
+							<i class="fa fa-sign-language" aria-hidden="true"></i>
+							为你推荐
+						</h3>
+					</div>
+					
+					<div class="row item-tuijian1">
+						<!-- data -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 页尾 -->
+		<div class="foot"></div>
+	</body>
+	<script src="js/UrlParm.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<!-- import Vue before Element -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/spxq.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/load.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/spxqdata.js" type="text/javascript" charset="utf-8"></script>
+</html>

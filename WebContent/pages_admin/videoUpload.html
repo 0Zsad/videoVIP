@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频上传页面</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/videoUpdate.css" />
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h3 class="text-left">
+						<i class="fa fa-play-circle-o" aria-hidden="true"></i>
+						<i>视频上传页面</i>
+					</h3>
+					<div class="panel panel-info">
+						<div class="panel-body">
+							<form role="form1" name="form1">
+								<div class="form-group" id="form-div1">
+									<label for="exampleInputFile">
+										<i class="fa fa-file" aria-hidden="true"></i>
+										上传视频封面
+									</label>
+									<input class="spfm" type="file" id="exampleInputFile" name="spfm"
+										accept="image/*" />
+								</div>
+							</form>
+							<form role="form">
+									<div>
+										<img src="" class="img" style="" />
+									</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">
+										<i class="fa fa-align-center" aria-hidden="true"></i>
+										视频名称
+									</label>
+									<input type="text" id="sppm" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">
+										<i class="fa fa-align-center" aria-hidden="true"></i>
+										视频链接地址
+									</label>
+									<input type="text" id="spdz" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										视频简介
+									</label>
+									<input type="text" id="spjj" class="form-control" />
+									<input type="hidden" id="spid" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										视频所属类型
+									</label>
+									<br />
+									<select id="splx" name="lx" class="btn btn-info" style="width: 150px;">
+										<option value="1">电影</option>
+										<option value="2">动漫</option>
+										<option value="3">记录片</option>
+										<option value="4">综艺</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										视频所属地区
+									</label>
+									<br />
+									<!--<input type="text" class="form-control" />-->
+									<select id="spdq" name="dq" class="btn btn-info" style="width: 150px;">
+										<option value="1">大陆</option>
+										<option value="2">欧美</option>
+										<option value="3">日韩</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										视频年份
+									</label>
+									<br />
+									<!--<input type="text" class="form-control" />-->
+									<select id="spsj" name="dq" class="btn btn-info" style="width: 150px;">
+										<option value="2021">2021</option>
+										<option value="2020">2020</option>
+										<option value="2019">2019</option>
+										<option value="2018">2018</option>
+										<option value="2017">2017</option>
+										<option value="2016">2016</option>
+										<option value="2015">2015</option>
+										<option value="2014">2014</option>
+									</select>
+								</div>
+								<input type="button" id="upload" class="btn btn-success" value="确认上传"
+									onclick="doAdd()" />
+								<input type="reset" class="btn btn-success" value="重置信息" />
+							</form>
+
+							<div id="showInfo">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="/videoVIP/js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/pages_admin/js/videoUpload.js" type="text/javascript" charset="utf-8"></script>
+</html>

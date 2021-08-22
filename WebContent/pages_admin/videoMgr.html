@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>视频管理</title>
+	<link rel="stylesheet" type="text/css" href="/videoVIP/css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/adminContent.css" />
+	<link rel="stylesheet" type="text/css" href="/videoVIP/bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/videoVIP/css/nav-foot.css"/>
+	<!-- 字体图标 -->
+	<link rel="stylesheet" type="text/css" href="/videoVIP/font-awesome-4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+	<!--
+    	描述：条件查询
+    -->
+	<!-- 1.search -->
+	<div class="search">
+		<!-- 1.1. head -->
+		<div class="head" style="color: #000000;background-color: #55557f;">
+			<span><img src="img/search.ico"/> 查询条件</span>
+			<span class="showHide">
+				<img src="img/up.ico" class="up"/>
+				<img src="img/down.ico" class="down" style="display: none;"/>
+			</span>
+		</div>
+		<!-- 1.2. body -->
+		<div class="body" >
+			<form name="form1">
+				<table width="100%" cellspacing="0">
+					<tr>
+						<td>视频片名</td>
+						<td><input name="sppm" placeholder="支持模糊查询"/></td>
+						<td>视频类型</td>
+						<td>
+							<select name="splx">
+								<option value="">请选择</option>
+								<option value="1">电影</option>
+								<option value="2">动漫</option>
+								<option value="3">纪录片</option>
+								<option value="4">综艺</option>
+							</select>
+						</td>
+						<td>视频地区</td>
+						<td>
+							<select name="spdq">
+								<option value="">请选择</option>
+								<option value="1">中国大陆</option>
+								<option value="2">欧美地区</option>
+								<option value="3">日韩地区</option>
+							</select>						
+						</td>
+					</tr>
+					<tr>
+						<td colspan="6" id="btnPanel">
+							<input type="button" onclick="doList()" value="查询" />
+							<input type="reset"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	
+	<!-- 2.space -->
+	<div class="space"></div>
+	
+	<!--
+    	描述：查询结果
+    -->
+	<!-- 3.content -->
+	<div class="content" >
+	<!-- 3.1. head -->
+		<div class="head"style="color: #000000;background-color: #55557f;">
+			<span><img src="img/table.ico"/> 查询结果</span>
+			<span onclick="location.reload()" class="refresh"><img src="img/refresh.ico"/></span>
+		</div>
+	</div>
+	<div class="col-md-12 column" >
+		<div class="row dy" id="img-movie">
+			<!-- data -->
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="/videoVIP/pages_admin/js/showHide.js" type="text/javascript" ></script>
+<script src="/videoVIP/bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/videoVIP/pages_admin/js/videoMgr.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>上传视频</title>
+		<link rel="stylesheet" href="./layui/css/layui.css">
+		<style type="text/css">
+			.select{
+				height: 36px;
+				width: 100px;
+				border: 1px solid #eee;
+				border-radius:2px;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- header -->
+		
+		<!-- mainbody -->
+		<div class="uploadsp">
+			<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+			    <legend>视频链接</legend>
+			</fieldset>
+			<!-- 上传视频 -->
+			<div id="videolink">
+				<div class="layui-form-item">
+				    <label class="layui-form-label">链接：</label>
+				    <div class="layui-input-block">
+				      <input type="text" name="splink" lay-verify="title" autocomplete="off" placeholder="请输入链接" class="layui-input">
+				    </div>
+				  </div>
+			</div>
+		</div>
+		<!-- 视频信息 -->
+		<div class="spinfo">
+			<!-- 上传视频封面 -->
+			<div class="spfm">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+				    <legend>封面上传</legend>
+				</fieldset> 
+				<!-- 上传图片 -->
+				<div class="layui-upload" style="margin-left: 30px;">
+					<button type="button" class="layui-btn" id="test1">上传图片</button>
+					<div class="layui-upload-list">
+						<img class="layui-upload-img" id="demo1" width="92px" height="92px">
+						<p id="demoText"></p>
+					</div>
+					<input type="file" id="exampleInputFile" />
+				</div>
+			</div>
+			<!-- 视频名 -->
+			<div class="spname">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+					<legend>视频名</legend>
+				</fieldset>
+				<div class="layui-form-item">
+				    <label class="layui-form-label">视频名：</label>
+				    <div class="layui-input-block">
+				      <input type="text" name="spname" lay-verify="title" autocomplete="off" placeholder="请输入视频名" class="layui-input">
+				    </div>
+				  </div>
+			</div>
+			<!-- 视频类型 -->
+			<div class="sptype">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+					<legend>视频类型</legend>
+				</fieldset>
+				<label class="layui-form-label">类型：</label>
+				<div class="layui-input-block">
+					<select name="sptype" lay-filter="aihao" class="select">
+						<option value=""></option>
+						<option value="0" selected="">电影</option>
+						<option value="1">戏剧</option>
+						<option value="2">喜剧</option>
+						<option value="3">悲剧</option>
+						<option value="4">电视剧</option>
+					</select>
+				</div>
+			</div>
+			<!-- 视频地区 -->
+			<div class="spdq">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+					<legend>视频地区</legend>
+				</fieldset>
+				<div class="layui-form-item">
+					<label class="layui-form-label">地区：</label>
+					<div class="layui-input-block">
+					 <select name="spdq" lay-filter="aihao" class="select">
+						<option value=""></option>
+						<option value="0" selected="">国产</option>
+						<option value="1">港澳</option>
+						<option value="2">欧美</option>
+						<option value="3">日本</option>
+						<option value="4">俄罗斯</option>
+					</select>
+				</div>
+			  </div>
+			</div>
+			<!-- 视频时间 -->
+			<!-- <div class="sptime">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+					<legend>视频时间</legend>
+				</fieldset>
+				<div class="layui-inline">
+				    <label class="layui-form-label">上映时间:</label>
+				    <div class="layui-input-inline">
+						<input type="text" class="layui-input" id="test1" placeholder="yyyy-MM-dd">
+				    </div>
+				</div>
+			</div> -->
+			<!-- 视频简介 -->
+			<div class="spjj">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+					<legend>视频名</legend>
+				</fieldset>
+				<div class="layui-form-item">
+				    <label class="layui-form-label">视频简介：</label>
+				    <div class="layui-input-block">
+				      <input type="text" name="spjj" lay-verify="title" autocomplete="off" placeholder="请输入视频简介" class="layui-input">
+				    </div>
+				  </div>
+			</div>
+			<!-- 视频简介 -->
+			<div class="tijiao">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+					<legend>视频名</legend>
+				</fieldset>
+				<div class="layui-form-item">
+				    <div class="layui-input-block">
+						<input type="button" value="提交">
+				    </div>
+				  </div>
+			</div>
+		</div>
+		
+		<!-- footer -->
+		
+	</body>
+</html>

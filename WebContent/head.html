@@ -1,0 +1,118 @@
+<html>
+<head></head>
+<body>
+<!-- 页面头部（可复制） -->
+<!-- 导航条部分开始 -->
+<nav class="navbar navbar-default navbar-static-top" id="nav1">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand glyphicon glyphicon-film" href="/videoVIP/index.html"></a>
+      <a class="navbar-brand" href="#" id="vip">VIP影院</a>
+    </div>
+  	
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li >
+        	<a id="shouye" href="/videoVIP/index.html">首页 <span class="sr-only">(current)</span></a>
+        </li>
+        <li>
+        	<a href="/videoVIP/pages_fl/spfl.html?splx=1">电影</a>
+        </li>
+        <li>
+        	<a href="/videoVIP/pages_fl/spfl.html?splx=2">动漫</a>
+        </li>
+        <li>
+        	<a href="/videoVIP/pages_fl/spfl.html?splx=3">记录片</a>
+        </li>
+        <li>
+        	<a href="/videoVIP/pages_fl/spfl.html?splx=4">综艺</a>
+        </li>
+      </ul>
+      <!-- 用户头像 -->
+     <a href="javascript:jurl()" id="yhtx">
+     	<img src="/videoVIP/img/yhtx.jpeg" class="img-circle" id="denglu-img">
+     	<span id="denglu">
+     		登&nbsp;&nbsp;录
+     	</span>
+     </a>
+     
+     <form class="navbar-form navbar-left">
+       <div class="form-group">
+         <input type="text" class="form-control" id="nav-search" placeholder="尽情搜索">
+       </div>
+       <input type="button" id="btn-search" onclick="doList()" class="btn btn-info" value="搜索" />
+     </form>
+   </div><!-- /.navbar-collapse -->
+ </div><!-- /.container-fluid -->
+</nav>
+<!-- 导航条部分结束 -->
+</body>
+	<script type="text/javascript">
+		var yh = sessionStorage.getItem("user");
+		var user = JSON.parse(yh);
+		
+		//页面加载完毕，显示用户头像
+		$(function(){
+			var yh = sessionStorage.getItem("user");
+			var user = JSON.parse(yh);
+			if(yh != null){
+				if(user.yhtx != null && user.yhtx != ''){
+					$("#denglu-img").attr("src","/videoVIP/file/"+user.yhtx);
+				}
+			}
+		});
+	
+		xsnc();
+		// 初始化加载
+		function xsnc() {
+			if(null != yh){
+				$("#denglu").html(user.yhnc);
+				$("#denglu").click(function() {
+					location.href = "/videoVIP/pages_user/user.html";
+				}); 
+			}else{
+				$("#denglu").html("登录");
+				$("#denglu").click(function() {
+					location.href = "/videoVIP/pages_Login/userlogin.html";
+				}); 
+			}
+		}
+		
+		//点击跳转
+		function jurl(){
+			var yh = sessionStorage.getItem("user");
+			if(null != yh){
+				location.href = "/videoVIP/pages_user/user.html";
+			}else{
+				location.href = "/videoVIP/pages_Login/userlogin.html";
+			}
+		}
+		
+		//头部模糊查询，查到数据跳到详情页
+		function doList(){
+			if($("#nav-search").val() != null && $("#nav-search").val() != ''){
+				$.ajax({
+					type:"post",
+					url:"/videoVIP/SpbController/list.do",
+					data:{
+						sppm: $("#nav-search").val(),
+						},
+					dataType:"json",
+					success:function(data){
+						//跳转
+						if(data != null && data != ''){
+							location.href = "/videoVIP/pages_xq/searchReset.html";
+							sessionStorage.setItem("spInfo", JSON.stringify(data));
+						}else{
+							alert("无搜索结果！请重新查询！");
+						}
+					}
+				});
+			}else{
+				alert("请输入需要查询的片名！");
+			}
+			
+		}
+		
+	</script>
+</html>

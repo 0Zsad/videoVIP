@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频上传页面</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/videoUpdate.css" />
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h3 class="text-left">
+						<i class="fa fa-play-circle-o" aria-hidden="true"></i>
+						<i>视频上传页面</i>
+					</h3>
+					<div class="panel panel-info">
+						<!-- <div class="panel-heading">
+							<img alt="140x140" src="../img/showImg2.png" class="img-rounded item-img" />
+							<span id="yhnc">
+								&nbsp;&nbsp;&nbsp;我的视频封面
+					      	</span>
+						</div> -->
+						<div class="panel-body">
+							<form role="form">
+								<div class="form-group" id="form-div1">
+									<label for="exampleInputFile">
+										<i class="fa fa-file" aria-hidden="true"></i>
+										上传视频封面
+									</label>
+									<input class="spfm" type="file" id="exampleInputFile" name="spfm" accept="image/*" />
+									<div id="hr"></div>
+									<!--  <input type="button" class="btn btn-success" value="确认修改">
+									 <input type="reset" class="btn btn-success" value="重置信息"> -->
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">
+										<i class="fa fa-align-center" aria-hidden="true"></i>
+										视频名称
+									</label>
+									<input type="text" id="sppm" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail1">
+										<i class="fa fa-align-center" aria-hidden="true"></i>
+										视频链接地址
+									</label>
+									<input type="text" id="spdz" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										视频简介
+									</label>
+									<input type="text" id="spjj" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										视频所属类型
+									</label>
+									<!--<input type="text" class="form-control" />-->
+									<br />
+									<select id="splx" name="lx" class="btn btn-info" style="width: 150px;">
+										<option value="电影">电影</option>
+										<option value="动漫">动漫</option>
+										<option value="纪录片">记录片</option>
+										<option value="综艺">综艺</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										视频所属地区
+									</label>
+									<br />
+									<!--<input type="text" class="form-control" />-->
+									<select id="spdq" name="dq" class="btn btn-info" style="width: 150px;">
+										<option value="1">大陆</option>
+										<option value="2">欧美</option>
+										<option value="3">日韩</option>
+									</select>
+								</div>
+								<!-- <form  enctype="multipart/form-data" name="uploadimge" action="" id="updateSpfm" method="post"> -->
+								<!-- 	</form> -->
+								<input type="button" id="upload" class="btn btn-success" value="确认上传" onclick="doAdd()" />
+								<input type="reset" class="btn btn-success" value="重置信息" />
+							</form>
+							<div id="showInfo">&nbsp;</div>
+						</div>
+						<!--<div class="panel-footer"></div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script>
+		$("#upload").click(function(){
+			var reg = /\.(png|jpg|jpeg|bmp)$/;	//支持的图片格式
+			var spfm = $("#exampleInputFile").val();			//获取图片名
+			if(spfm == ""){
+				$("#showInfo").html("请选择图片");
+			}else if(reg.test(spfm) == false){
+				$("#showInfo").html("图片格式不正确（支持png、jpg、jpeg、 bmp等格式）");
+			}else{
+				$("#showInfo").html("&nbsp;");
+				// Ajax 请求
+				$.ajax({
+					type:"POST",											
+					url:"/videoVIP/FileUploadController/uploadSpfm.do",
+					data:new FormData(form),								// 提交数据
+					processData: false,  									// 告诉jQuery不要去处理发送的数据
+					contentType: false,   									// 告诉jQuery不要去设置Content-Type请求头
+					success:function(fileName){
+						if(fileName != null && fileName != ""){
+							var pic = "/videoVIP/spfmFile/"+fileName;
+							alert(pic);
+							// 更新父窗口中的用户图像（就是页面左上角头像）
+							/* window.parent.document.getElementById("spfm").src = pic;
+							$("#exampleInputFile").attr("src",pic); */
+							
+							// 更新 sessionStorage
+							/* user.spfm = fileName;
+							sessionStorage.setItem("user",JSON.stringify(user));// 将更新后的用户信息重新放进sessionStorage */
+						}else{
+							$("#showInfo").html("头像更新失败！");
+						}
+					}
+				});
+			}
+		}); 
+		
+		/* function doAdd() {
+			var url = "/videoVIP/SpbController/add.do"
+			$.post(url, {
+					sppm: $("#sppm").val(),
+					spdz: $("#spdz").val(),
+					spjj: $("#spjj").val(),
+					splx: $("#splx").val(),
+					spdq: $("#spdq").val(),
+					spfm: $("#exampleInputFile").val()
+				},
+				function(ret) {
+					if (ret == true) {
+						alert(ret)
+						location.href = "/videoVIP/pages_admin/videoMgr.html"; 
+					} else {
+
+					}
+				},
+			);
+		} */
+	</script>
+</html>

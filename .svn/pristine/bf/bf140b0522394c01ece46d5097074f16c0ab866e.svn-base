@@ -1,0 +1,39 @@
+/********************* 最近记录Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 8;i++){
+		  zy +=	'<div class="col-md-3">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="/videoVIP/pages_xq/spxq.html?spid='+data[i].spid+'"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'<a class="btn btn-danger" href="#">删除</a>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".item-gkls1").append(zy);
+	}
+});
+
+/********************* 更早记录Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 8;i++){
+		  zy +=	'<div class="col-md-3">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="/videoVIP/pages_xq/spxq.html?spid='+data[i].spid+'"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'<a class="btn btn-danger" href="#">删除</a>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".item-gkls2").append(zy);
+	}
+});

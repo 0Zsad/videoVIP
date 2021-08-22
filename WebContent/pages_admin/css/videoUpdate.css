@@ -1,0 +1,32 @@
+/************************ 可选要或者不要 *******************************/
+@media screen and (min-width: 1480px) {
+	.container{
+		width: 1480px;
+	}
+}
+
+/*************************** 主体 ************************************/
+.form-group label{
+	font-size: 16px;
+}
+
+.form-group{
+	margin-bottom: 20px;
+}
+
+.item-img{
+	height: 150px;
+	width: 120px;
+}
+
+#yhnc{
+	color: #000000;
+}
+
+#updateSpfm{
+	margin-top: 30px;
+}
+
+#hr{
+	margin-top: 10px;
+}

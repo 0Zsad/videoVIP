@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+ <form id="form1" action=# method="post" >
+		<span>视频编号：</span><input type="text" name="spid" /><br/>
+        <span>视频片名：</span><input type="text" name="sppm" /><br/>
+		<span>封面：</span> <input type="file" name="spfm"/><br/> 
+		<span>类型：</span><input type="text" name="splx" /><br/>
+		<span>地区：</span><input type="text" name="spdq"/><br/>
+		<span>简介：</span><input type="text" name="spjj" /><br/>
+        <input type="button" value="修改" onclick="upload()">
+    </form>S
+</body>
+</html>

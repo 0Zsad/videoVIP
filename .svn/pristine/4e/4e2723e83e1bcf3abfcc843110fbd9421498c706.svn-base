@@ -1,0 +1,55 @@
+//校验
+//校验用户名: 字母数字下划线等合法字符构成
+function checkYhzh(){
+	if(/^\w+/.test(form1.yhzh.value)){
+		return true;
+	}else{
+		alert("用户名不合法");
+		return false;
+	}
+}
+
+// 校验密码: 6位数字
+function checkPwd(){
+	if(/^\d{6}/.test(form1.pwd.value)){
+		return true;
+	}else{
+		alert("密码不符合要求");
+		return false;
+	}
+}
+
+
+function doLogin(){
+	if(checkYhzh() && checkPwd()){
+		var url = "/videoVIP/LoginController/doLogin.do";
+		var params = {
+			yhzh:form1.yhzh.value,
+			pwd:form1.pwd.value
+		}
+		$.post(url,params,function(user){
+			if(null != user && "" != user) {// 不为空说明该用户存在，登录成功
+				// 登录成功，将user转成json字符串存放在sessionStorage中，方便在其他页面使用user
+				sessionStorage.setItem("user",JSON.stringify(user));
+				// 跳转到用户界面
+				location = "/videoVIP/index.html";
+			}else {//user值为空，说明该用户不存在，用户名或密码有误，重新登录
+				alert("账号或密码错误！");
+			}
+		});
+	}
+}
+
+$("#login").click(function(){
+	doLogin();
+});
+
+//判断如果按下Enter回车键，则登录
+$(document).keydown(function(e){
+	e = e || window.event
+	if(e.keyCode == 13){//Enter键对应键值为13
+		doLogin();
+	}
+});
+
+

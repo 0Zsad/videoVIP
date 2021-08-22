@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>头像上传</title>
+	<style>
+		input{border-radius:5px;background-color:#5BC0DE}
+		#pic{width:180px;}
+		#upload{width:100px;padding:2px 25px}
+		#showInfo{color:red}
+		#box{text-align:center;margin:auto}
+		#yhtx{width:300px;height:300px;border-radius:5px;border:solid 6px gray;}
+	</style>
+</head>
+<body>
+	<form enctype="multipart/form-data" name="form1">
+		<input type="file" name="yhtx" id="pic" accept="image/*"/>
+		<input type="button" value="上 传" id="upload"/>
+	</form>
+	<div id="showInfo">&nbsp;</div>
+	<div id="box">
+		<img id="yhtx" src="img/admin.jpg" alt="个人头像" >
+		<p>个人头像</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/********************* 热播右侧Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 8;i++){
+		  zy +=	'<div class="col-md-3">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".item-rebo").append(zy);
+	}
+});
+
+/********************* 电影Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < data.length;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".dy").append(zy);
+	}
+});
+
+/********************* 动漫Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < data.length;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".dm").append(zy);
+	}
+});
+
+/********************* 剧集Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < data.length;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".jj").append(zy);
+	}
+});
+
+/********************* 综艺Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < data.length;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".zy").append(zy);
+	}
+});

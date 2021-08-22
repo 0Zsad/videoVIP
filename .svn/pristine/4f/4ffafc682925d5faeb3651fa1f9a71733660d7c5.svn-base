@@ -1,0 +1,150 @@
+@import url("adminGlobal.css");
+
+#contentPanel{
+	font-family: "Consolas","courier new";
+}
+
+.search,
+.content{
+	/*box-shadow: 10px 10px 5px #888888;*/	/*阴影*/
+	background-color: white;
+}
+
+.space{
+	/*height: 15px;*/
+}
+
+.head{
+	height: 20px;
+	background-color: #55557f;
+	color:white;
+	padding: 10px;
+}
+
+.refresh,
+.showHide{
+	width: 30px;
+	float:right;
+	text-align: center;
+	color:#8CB5EF;
+	cursor: pointer;
+}
+
+/*-----------table表格 + form表单: begin----------*/
+table tr{
+	height: 35px;
+	text-align: center;
+	word-break: keep-all;
+}
+
+table tr:nth-child(even){/*偶数行背景色*/
+	background-color: #F8F8F8;
+}
+
+td > span{
+	color:red;
+}
+
+form table tr td:nth-child(odd){/*奇数列*/
+	text-align: right;
+	/*color:#F1AF00;*/
+}
+form table tr td:nth-child(even){/*偶数列*/
+	text-align: left;
+}
+
+form table tr td#btnPanel{
+	text-align: center;
+}
+
+
+table tr a{
+	text-decoration: none;
+	color: white;
+	background-color: #5BC0DE;
+	padding:3px 20px;
+	border-radius: 3px;
+}
+
+input{
+	width: 150px;
+	height: 20px;
+	border-radius: 3px;
+	border:1px solid lightgrey;
+}
+
+select{
+	width: 153px;
+	height: 24px;
+	border-radius: 3px;
+	border:1px solid lightgrey;
+}
+
+/*按钮*/
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+button{
+	width: 100px;
+	height: 25px;
+	border: none;
+	background-color: #5BC0DE;
+	color:white;
+	cursor: pointer;
+	margin:10px;
+}
+
+input:focus,
+select:focus{
+	border-color:darkgrey;
+}
+
+table tr a:hover{
+	color:black;
+	cursor:pointer;
+}
+input:hover{
+	color:black;
+}
+
+input[readonly="readonly"]:hover{
+	border:1px solid lightgrey;
+}
+
+table tr a[href='#']:hover{
+	color:white;
+	cursor:default;
+}
+/*-----------table表格 + form表单: end----------*/
+
+/*------------[修改窗口] 样式设置 : begin----------*/
+#updateWindow{
+	display:none;
+	background-color: white;
+	border: solid 1px black;
+	border-radius: 5px;
+	width: 400px;
+	position: fixed;
+	top: 30%;
+	left: 30%;
+	box-shadow: 7px 7px 5px #888888;
+}
+
+#updateWindow #title{
+	background-color: #5BC0DE;
+	height: 28px;
+	color:white
+}
+#updateWindow #titleTxt{
+	float: left;
+	padding:5px 10px;
+}
+#updateWindow #titleClose{
+	float:right;
+	padding: 5px 20px;
+	cursor:pointer
+}
+#updateWindow #titleClose:hover{
+	background-color: lightgray;
+}
+/*------------[修改窗口] 样式设置 : end ----------*/

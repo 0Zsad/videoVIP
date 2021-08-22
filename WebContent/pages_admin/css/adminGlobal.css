@@ -1,0 +1,10 @@
+body,ul,li,hr{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body{
+	font-family: "Consolas","courier new";
+	font-size: 15px;
+}

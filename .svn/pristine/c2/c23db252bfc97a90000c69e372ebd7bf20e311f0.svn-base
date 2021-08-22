@@ -1,0 +1,18 @@
+var spid = UrlParm.parm("spid");
+// spid = 1;  //test
+url = "/videoVIP/SpbController/selectById.do";
+parm = {"spid":spid};
+$.post(url,parm,function(data){
+	var str = "<video controls autoplay>"
+			+ "<source src='"+data.spdz+"' type='video/mp4'>"
+			+ "<source src='"+data.spdz+"' type='video/ogg'>"
+			+ "<source src='"+data.spdz+"' type='video/webm'>"
+			+ "</video>"
+	document.getElementById("video").innerHTML=str;
+	$("#spm").html(data.sppm);
+	$("#sppm").html("视频名："+data.sppm);
+	$("#spname").html(data.sppm);
+	$("#sptype").html(data.splx);
+	$("#spinfo").html(data.spjj);
+	$("#spfm").attr("src","/videoVIP/spfmfile/"+data.spfm);
+})

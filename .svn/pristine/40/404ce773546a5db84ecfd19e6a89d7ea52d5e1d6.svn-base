@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>视频播放页面</title>
+		<link rel="stylesheet" type="text/css" href="./css/video.css"/>
+		<link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+		<link rel="stylesheet" type="text/css" href="/videoVIP/bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/css/nav-foot.css"/>
+		<!-- import CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="/videoVIP/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!-- header -->
+		<div class="head"></div>
+		<!-- body -->
+		<div id="centent">
+			<!-- 视频内容 -->
+			<div id="video">
+				<p style="color: white;" id="spm">视频名</p>
+				<!-- data -->
+				<!-- <video controls autoplay>
+					<source src="https://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4">
+					<source src="https://www.runoob.com/try/demo_source/movie.ogg" type="video/ogg">
+					<source src="https://www.runoob.com/try/demo_source/movie.webm" type="video/webm">
+				</video> -->
+			</div>
+			<div id="video_bottom">
+				<div id="video_bottom_til">
+					<span id="sppm">视频名：Movie</span>
+				</div>
+			</div>
+			<!-- 侧边 -->
+			<div id="video_side">
+				<div id="video_side_til"><span>推荐</span></div>
+				<div id="video_side_cen"></div>
+				<div id="video_side_den" class="scroll">
+					 <div class="video_den">
+						<img src="http://i0.letvimg.com/lc12_yunzhuanma/202012/04/09/23/6364a301679dc5c48f1ce5efbf88028b_v2_MTQyMDQ1MTM2/thumb/2_400_225.jpg">
+						<div>
+							<p>汪苏泷《明天你是否依然爱我》（电影《明天你是否依然爱我》同名主题曲）MV</p>
+						</div>
+					</div> 
+					
+				</div>
+				<div id="video_side_btm"></div>
+			</div>
+		</div>
+		<!-- 介绍及评价 -->
+		<div id="desc">
+			<div class="img">
+				<img src="#" height="175px" width="135px" id="spfm">
+			</div>
+			<div class="spdesc">
+				<p class="spname" id="spname">视频名</p>
+				<p class="sptype" id="sptype">视频类型</p>
+				<p class="spinfo" id="spinfo">视频简介</p>
+			</div>
+			<!-- 评分 -->
+			<!-- <div class="rate">
+				<span>点评</span>
+				<div><div id="test6"></div></div>
+			</div> -->
+			<!-- 收藏 -->
+			<div class="coll" id="coll">
+				<button id="collbtn" type="button" class="layui-btn" @click="errormessage" style="background-color: #00FFFF;"><i class="layui-icon"></i></button>
+			</div>
+		</div>
+		<!-- footer -->
+		<!-- 页面底部 （可复制） -->
+		<div class="foot"></div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<!-- import Vue before Element -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<!-- import JavaScript -->
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script src="../js/load.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/UrlParm.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 前端跳转解析 -->
+	<script src="./js/videobf.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 收藏按钮 -->
+	<script src="./js/videosc.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 评分 -->
+	<script src="./layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/rate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</html>

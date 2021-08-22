@@ -1,0 +1,212 @@
+@import url("global.css");
+
+
+#centent{
+	width: 1200px;
+	height: 550px;
+	margin: 0 auto;
+	background-color: skyblue;
+	position: relative;
+}
+
+/* 视频 */
+#video{
+	width: 890px;
+	height: 500px;
+	background-color: #000000;
+	position: absolute;
+	left: 0;
+}
+
+#video video{
+	width: 100%;
+	height: 100%;
+}
+/* 底部 */
+#video_bottom{
+	width: 890px;
+	height: 50px;
+	position: absolute;
+	background-color: #2C2C2C;
+	bottom: 0px;
+}
+
+#video_bottom_til{
+	width: 500px;
+	height: 50px;
+}
+
+#video_bottom_til span{
+	position: absolute;
+	padding: 10px 30px;
+	font-size: 20px;
+	color: white;
+}
+/* 侧边 */
+#video_side{
+	width: 310px;
+	height: 550px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#video_side_til{
+	width: 310px;
+	height: 50px;
+	background-color: #2C2C2C;
+	border-bottom: 2px solid #4C4C4C;
+}
+
+#video_side_til span{
+	position: absolute;
+	width: 100px;
+	height: 37px;
+	padding: 12px 0 0 0;
+	border-bottom: 2px solid red;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+}
+
+#video_side_cen{
+	width: 310px;
+	height: 20px;
+	background-color: #2C2C2C;
+}
+
+#video_side_den{
+	width: 310px;
+	height: 458px;
+	overflow:auto;	/* 自动滚轮 */
+	overflow-x:hidden;	/* 隐藏x滚动条 */
+	background-color: #2C2C2C;
+}
+/*****************************滚动块样式（.scroll使用该样式）***********************************/
+.scroll{
+	overflow:auto;	/* 自动滚轮 */
+	overflow-x:hidden;	/* 隐藏x滚动条 */
+}
+/* 滚动块宽度 */
+.scroll::-webkit-scrollbar {
+	width: 16px;
+   height: 100px;
+}
+
+/* 正常情况下滑块的样式 */
+.scroll::-webkit-scrollbar-thumb {
+	background-color: #313131;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+}
+
+/*鼠标悬浮在该类指向的控件上时滑块的样式*/
+.scroll:hover::-webkit-scrollbar-thumb {
+   background-color: #616161;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0,0,0,.1);
+}
+	
+/***********************************************************************/	
+	
+/* 侧边内容 */
+#video_side_den .video_den{
+	height: 82px;
+	width: 300px;
+	background-color: #2C2C2C;
+	padding: 0 0 0 10px;
+	clear: both;
+}
+
+#video_side_den .video_den img{
+	width: 110px;
+	height: 63px;
+	padding: 10px 0;
+	float: left;
+}
+
+#video_side_den .video_den p{
+	color: white;
+	max-width: 166px;
+	float: left;
+	padding: 10px 0 0 10px;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+#video_side_den .video_den:hover{
+	background-color: #4C4C4C;
+}
+
+/* 侧边底 */
+#video_side_btm{
+	width: 310px;
+	height: 20px;
+	background-color: #2C2C2C;
+}
+
+#desc{
+	width: 1200px;
+	height: 175px;
+	margin: 12px auto;
+	/* background-color: skyblue; */
+	border-width: 1px 0;
+	border-style: solid;
+	border-color: #DEDEDE;
+	position: relative;
+}
+
+#desc .img{
+	position: absolute;
+	left: 10px;
+}
+
+#desc .spdesc{
+	position: absolute;
+	left: 160px;
+}
+
+/* 字体位置，格式 */
+#desc p{
+	color: #212121;
+}
+
+#desc .spname{
+	font-size: 16px;
+	margin: 4px 0 16px;
+}
+
+#desc .sptype{
+	font-size: 12px;
+	margin: 4px 0px 16px;
+}
+
+#desc .spinfo{
+	font-size: 12px;
+	width: 700px;
+	height: 60px;
+}
+
+#desc .rate{
+	position: absolute;
+	padding: 16px 0;
+	right: 100px;
+}
+
+#desc .coll{
+	position: absolute;
+	padding: 16px 0;
+	top: 24px;
+	right: 20px;
+}
+/* 底部 */
+/* footer{
+    width: 100%;
+    height:120px;   
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    background: lightgrey;
+} */

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>yhb测试页面</title>
+	</head>
+	<body>
+		<form>
+			账号：<input type="text" name="yhzh" id="yhzh"/></br>
+			密码：<input type="text" name="pwd" id="pwd"/></br>
+			昵称：<input type="text" name="yhnc" id="yhnc"/></br>
+			状态：<input type="text" name="yhzt" id="yhzt"/></br>
+			<input type="button" value="提交" onclick="doAdd()"/>
+		</form>
+		
+		<form>
+			账号：<input type="text" name="1" id="1"/></br>
+			密码：<input type="text" name="2" id="2"/></br>
+			昵称：<input type="text" name="3" id="3"/></br>
+			状态：<input type="text" name="4" id="4"/></br>
+			<input type="button" value="查询" onclick="doSelectById()"/>
+		</form>
+		
+		<table>
+			<tbody id="table1"></tbody>
+		</table>
+		
+	</body>
+	<script src="js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function doAdd(){
+			$.post("/videoVIP/YhbController/add.do",
+					{	
+						yhzh:$("#yhzh").val(),
+						pwd:$("#pwd").val(),
+						yhnc:$("#yhnc").val(),
+						yhzt:$("#yhzt").val()
+					},
+					function(ret){
+						if(ret == true){
+							alert("yes");
+						}else{
+							alert("no");
+						}
+					},"json"
+			);
+		}
+		
+		function doList(){
+			$.get("/videoVIP/YhbController/list.do",
+			function(users){
+				if(null != users && users.length > 0){
+					$("#table1").empty();
+					for(i = 0; i < users.length; i++){
+						var user = users[i];
+						$("#table1").append(
+							$("<tr>")
+							.append($("<td>").html(i+1))
+							.append($("<td>").html(user.yhzh))
+							.append($("<td>").html(user.pwd))
+							.append($("<td>").html(user.yhnc))
+							.append($("<td>").html(user.yhtx))
+							.append($("<td>").html(user.yhzt))
+						);
+					}
+				}
+			},"json")
+		}
+		
+		function doSelectById(){
+			$.get("/videoVIP/YhbController/selectById.do",
+					{
+						yhzh:$("#yhzh").val()
+					},
+			function(data){
+					$("#1").val(data.yhzh);
+					$("#2").val(data.pwd);
+					$("#3").val(data.yhnc);
+					$("#4").val(data.yhzt);
+			},"json")
+		}
+	</script>
+</html>

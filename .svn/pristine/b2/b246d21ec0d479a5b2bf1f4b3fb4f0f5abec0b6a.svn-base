@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>添加用户</title>
+	<link rel="stylesheet" type="text/css" href="css/adminContent.css" />
+</head>
+<body>
+	<div class="body">
+		<form name="form1">
+			<table width="100%" cellspacing="0">
+				<tr><td colspan="2" style="text-align: center;color: red;" id="tip">&nbsp;</td></tr>
+				<tr>
+					<td width="46%">用户名</td>
+					<td><input name="yhm" id="yhm"/><span>*</span></td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td><input name="pwd" id="pwd"/><span>*</span></td>
+				</tr>
+				<tr>
+					<td>确认密码</td>
+					<td><input id="pwd2" /><span>*</span></td>
+				</tr>
+				<tr>
+					<td>身份标识</td>
+					<td>
+						<select name="yhsf" id="yhsf">
+							<option value="3">用户</option>
+							<option value="1">普通管理员</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" id="btnPanel">
+						<input type="submit" value="保存" />
+						<input type="reset"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

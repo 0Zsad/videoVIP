@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>添加用户</title>
+	<link rel="stylesheet" type="text/css" href="css/adminContent.css" />
+</head>
+<body>
+	<div class="body">
+		<form name="form1">
+			<table width="100%" cellspacing="0">
+				<tr><td colspan="2" style="text-align: center;color: red;" id="tip">&nbsp;</td></tr>
+				<tr>
+					<td width="46%">用户账号</td>
+					<td><input name="yhzh" id="yhzh" onblur="checkYhzh()"/><span>*</span></td>
+				</tr>
+				<tr>
+					<td width="46%">用户昵称</td>
+					<td><input name="yhnc" id="yhnc"/><span>*</span></td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td><input name="pwd" id="pwd" onblur="checkPwd()"/><span>*</span></td>
+				</tr>
+				<tr>
+					<td>确认密码</td>
+					<td><input id="pwd2" onblur="checkPwd2()" /><span>*</span></td>
+				</tr>
+				<tr>
+					<td colspan="2" id="btnPanel">
+						<input type="button" value="保存" onclick="doAdd()"/>
+						<input type="reset"/>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="/videoVIP/pages_admin/js/userAdd.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

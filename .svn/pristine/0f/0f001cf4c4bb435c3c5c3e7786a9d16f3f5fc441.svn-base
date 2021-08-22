@@ -1,0 +1,38 @@
+package com.lanqiao.videoVIP.service;
+
+import java.io.Serializable;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lanqiao.videoVIP.entity.Scb;
+import com.lanqiao.videoVIP.mapper.ScbMapper;
+import com.lanqiao.videoVIP.util.DateUtil;
+import com.lanqiao.videoVIP.util.UUIDUtil;
+
+@Service
+public class ScbService {
+
+	@Autowired
+	private ScbMapper scbMapper;
+
+	public boolean add(Scb scb) {
+		scb.setSpid(UUIDUtil.getUUID());
+		return scbMapper.add(scb);
+	}
+
+	public boolean deleteById(Serializable spid) {
+		return scbMapper.deleteById(spid);
+	}
+
+	public List<Scb> list(Scb sp) {
+		List<Scb> list = scbMapper.list(sp);
+		for (Scb scb : list) {
+			String scsj = scb.getScsj();
+			scsj = DateUtil.dateFmt(scsj, DateUtil.DATE_YMDHMS1, DateUtil.DATE_YMDHMS2);
+			scb.setScsj(scsj);
+		}
+		return list;
+	}
+}

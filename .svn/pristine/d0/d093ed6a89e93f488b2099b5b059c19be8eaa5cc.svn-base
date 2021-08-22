@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>yhb测试页面</title>
+	</head>
+	<body>
+		<form>
+			账号：<input type="text" name="yhzh" id="yhzh"/></br>
+			密码：<input type="text" name="pwd" id="pwd"/></br>
+			昵称：<input type="text" name="yhnc" id="yhnc"/></br>
+			状态：<input type="text" name="yhzt" id="yhzt"/></br>
+			<input type="button" value="提交" onclick="doAdd()"/>
+		</form>
+	</body>
+	<script src="js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		function doAdd(){
+			$.post("/videoVIP/YhbController/add.do",
+					{	
+						yhm:$("#yhzh").val(),
+						pwd:$("#pwd").val(),
+						yhnc:$("#yhnc").val(),
+						yhzt:$("#yhzt").val()
+					},
+					function(ret){
+						if(ret == true){
+							alert("添加成功！");
+						}else{
+							alert("添加失败！");
+						}
+					},
+			);
+		}
+	</script>
+</html>

@@ -1,0 +1,43 @@
+package com.lanqiao.videoVIP.entity;
+
+public class Glyb {
+	
+	/**管理员账号 */
+	private String glyzh;
+	/**管理员密码 */
+	private String glypwd;
+	
+	/*Constructor */
+	public Glyb() {
+		super();
+	}
+
+	public Glyb(String glyzh, String glypwd) {
+		super();
+		this.glyzh = glyzh;
+		this.glypwd = glypwd;
+	}
+
+	public String getGlyzh() {
+		return glyzh;
+	}
+
+	/*set & get */
+	public void setGlyzh(String glyzh) {
+		this.glyzh = glyzh;
+	}
+
+	public String getGlypwd() {
+		return glypwd;
+	}
+
+	public void setGlypwd(String glypwd) {
+		this.glypwd = glypwd;
+	}
+
+	@Override
+	public String toString() {
+		return "Glyb [glyzh=" + glyzh + ", glypwd=" + glypwd + "]";
+	}
+	
+}

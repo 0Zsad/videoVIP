@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频信息修改页面</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/videoUpdate.css"/>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h3 class="text-left">
+						<i class="fa fa-play-circle-o" aria-hidden="true"></i>
+						<i>视频信息修改页面</i>
+					</h3>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<img alt="140x140" src="../img/showImg2.png" class="img-rounded item-img" />
+							<span id="yhnc">
+								&nbsp;&nbsp;&nbsp;我的视频封面
+					      	</span>
+						</div>
+						<div class="panel-body">
+							<form role="form">
+								<div class="form-group">
+									<label for="exampleInputEmail1">
+										<i class="fa fa-align-center" aria-hidden="true"></i>
+										修改视频名称
+									</label>
+									<input type="text" class="form-control" />
+								</div>
+								<div class="form-group" id="spjj">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										修改视频简介
+									</label>
+									<input type="text" class="form-control" />
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										修改视频所属类型
+									</label>
+									<!--<input type="text" class="form-control" />-->
+									<br />
+									<select name="lx" class="btn btn-info" style="width: 150px;">
+										<option value="电影">电影</option>
+										<option value="动漫">动漫</option>
+										<option value="剧集">剧集</option>
+										<option value="综艺">综艺</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										修改视频所属地区
+									</label>
+									<br />
+									<!--<input type="text" class="form-control" />-->
+									<select name="dq" class="btn btn-info" style="width: 150px;">
+										<option value="大陆">大陆</option>
+										<option value="欧美">欧美</option>
+										<option value="日韩">日韩</option>
+										<option value="香港">香港</option>
+									</select>
+								</div>
+								<input type="button" class="btn btn-success" value="确认修改">
+								<input type="reset" class="btn btn-success" value="重置信息">
+							</form>
+							<form  enctype="multipart/form-data" name="uploadimge" action="" id="updateSpfm" method="post">
+								<div class="form-group" id="form-div1">
+									 <label for="exampleInputFile">
+									 	<i class="fa fa-file" aria-hidden="true"></i>
+										修改视频封面
+									 </label>
+									 <input type="file" id="exampleInputFile" name="spfm" accept="image/*"/>
+									 <div id="hr"></div>
+									 <input type="button" class="btn btn-success" value="确认修改">
+									 <input type="reset" class="btn btn-success" value="重置信息">
+								</div>
+							</form>
+						</div>
+						<!--<div class="panel-footer"></div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</html>
+

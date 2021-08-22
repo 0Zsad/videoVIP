@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>用户修改页面</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/userUpdate.css"/>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<h3 class="text-left">
+						<i class="fa fa-address-book fa-1x" aria-hidden="true"></i>
+						<i>用户修改页面</i>
+					</h3>
+					<div class="panel panel-info">
+						<div class="panel-heading">
+							<img alt="140x140" src="../img/showImg2.png" class="img-circle item-img" />
+							<span id="yhnc">
+								&nbsp;&nbsp;&nbsp;我的头像（这里存放用户昵称）
+					      	</span>
+							<!--<h3 class="panel-title">
+								Panel title
+							</h3>-->
+						</div>
+						<div class="panel-body">
+							<form role="form" name="form1">
+								<div class="form-group">
+									<label for="exampleInputEmail1">
+										<i class="fa fa-unlock-alt" aria-hidden="true"></i>
+										修改密码
+									</label>
+									<input type="password" class="form-control" id="password" name="pwd" />
+									<div id="pwdPrompt"></div>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1">
+										<i class="fa fa-tag" aria-hidden="true"></i>
+										修改昵称
+									</label>
+									<input type="text" class="form-control" id="yhnc" name="yhnc" />
+								</div>
+								<!--<div class="form-group">
+									<label for="exampleInputFile">
+										<i class="fa fa-user-circle-o" aria-hidden="true"></i>
+										修改头像
+									</label>
+									<input type="file" id="exampleInputFile" />
+									<!--<p class="help-block">
+										Example block-level help text here.
+									</p>
+								</div>-->
+								<div class="checkbox">
+									 <label><input type="checkbox" />Check me out</label>
+								</div>
+								<button type="button" id="update" class="btn btn-success" >确认修改</button>
+								<button type="reset" class="btn btn-warning">重置信息</button>
+							</form>
+						</div>
+						<!--<div class="panel-footer"></div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/userUpdate.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,155 @@
+/********************* 电影Ajax遍历视频封面 ********************/
+/*上半段*/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 6;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".dy1").append(zy);
+	}
+});
+
+/*下半段*/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 6;i < 12;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".dy2").append(zy);
+	}
+});
+
+/********************* 动漫Ajax遍历视频封面 ********************/
+/*上半段*/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 6;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".dm1").append(zy);
+	}
+});
+
+/*下半段*/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 6;i < 12;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".dm2").append(zy);
+	}
+});
+
+/********************* 剧集Ajax遍历视频封面 ********************/
+/*上半段*/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 6;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".jj1").append(zy);
+	}
+});
+
+/*下半段*/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 6;i < 12;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".jj2").append(zy);
+	}
+});
+
+/********************* 综艺Ajax遍历视频封面 ********************/
+/*上半段*/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 6;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".zy1").append(zy);
+	}
+});
+
+/*下半段*/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 6;i < 12;i++){
+		  zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".zy2").append(zy);
+	}
+});

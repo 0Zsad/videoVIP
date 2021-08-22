@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页面</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<!-- 页面头部 -->
+		<div class="head">
+			<!-- 导航条部分开始 -->
+			<nav class="navbar navbar-default navbar-static-top" id="nav1">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand glyphicon glyphicon-film" href="#"></a>
+			      <a class="navbar-brand" href="#">VIP影院</a>
+			    </div>
+			  	
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li class="active">
+			        	<a href="#">首页 <span class="sr-only">(current)</span></a>
+			        </li>
+			        <li>
+			        	<a href="#">电影</a>
+			        </li>
+			        <li>
+			        	<a href="#">动漫</a>
+			        </li>
+			        <li>
+			        	<a href="#">剧集</a>
+			        </li>
+			        <li>
+			        	<a href="#">综艺</a>
+			        </li>
+			      </ul>
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" id="nav-text" placeholder="尽情搜索">
+			        </div>
+			        <button type="submit" class="btn btn-info glyphicon glyphicon-search"></button>
+			      </form>
+			      <ul class="nav navbar-nav navbar-right">
+			      	<li><a href="#">登录</a></li>
+			      	<li><a href="#">注册</a></li>
+			      	<!-- 历史记录 -->
+			        <li><a href="#" class="glyphicon glyphicon-time" style="font-size: 22px;"></a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			<!-- 导航条部分结束 -->
+		</div>
+		
+		<!-- 页面主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column" class="body">
+					<!-- 轮播热门视频 -->
+					<div class="carousel slide" id="carousel-743702">
+						<ol class="carousel-indicators">
+							<li class="active" data-slide-to="0" data-target="#carousel-743702">
+							</li>
+							<li data-slide-to="1" data-target="#carousel-743702">
+							</li>
+							<li data-slide-to="2" data-target="#carousel-743702">
+							</li>
+							<li data-slide-to="3" data-target="#carousel-743702">
+							</li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active">
+								<img alt="" src="img/showImg3.jpg" style="width: 100%;height: 450px;"/>
+							</div>
+							<div class="item">
+								<img alt="" src="img/showImg4.jpg" style="width: 100%;height: 450px;"/>
+							</div>
+							<div class="item">
+								<img alt="" src="img/showImg5.jpg" style="width: 100%;height: 450px;"/>
+							</div>
+							<div class="item">
+								<img alt="" src="img/showImg6.jpg" style="width: 100%;height: 450px;"/>
+							</div>
+						</div> 
+						<a class="left carousel-control" href="#carousel-743702" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a> 
+						<a class="right carousel-control" href="#carousel-743702" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					
+					<!-- 页面广告 -->
+					<div class="gg">
+						<img src="img/img-gg.jpg" style="width: 100%;"/>
+					</div>
+				</div>
+				
+				<!-- 热播推荐开始 -->
+				<!-- 这里要插入   字体图标+热播推荐一行 -->
+				<div class="col-md-4 column">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="thumbnail">
+								<img alt="300x200" src="img/showImg1.jpg" style="height: 276px;"/>
+								<div class="caption">
+									<h3>
+										你是我的荣耀
+									</h3>
+									<p>
+										主演：迪丽热巴，杨洋，胡可，王彦霖
+									</p>
+									<p>
+										导演：王之
+									</p>
+									<!--<p>
+										 <a class="btn btn-primary" href="#">Action</a> <a class="btn" href="#">Action</a>
+									</p>-->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-8 column">
+					<div class="row clearfix">
+						<div class="col-md-12 column">
+							<div class="row img-size">
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img alt="300x200" src="img/showImg1.jpg" />
+										<h4>
+											你是我的荣耀
+										</h4>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img alt="300x200" src="img/showImg1.jpg" />
+										<h4>
+											你是我的荣耀
+										</h4>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img alt="300x200" src="img/showImg1.jpg" />
+										<h4>
+											你是我的荣耀
+										</h4>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img alt="300x200" src="img/showImg1.jpg" />
+										<h4>
+											你是我的荣耀
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row clearfix">
+						<div class="col-md-12 column">
+							<div class="row img-size">
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img alt="300x200" src="img/showImg1.jpg"/>
+										<h4>
+											你是我的荣耀
+										</h4>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img alt="300x200" src="img/showImg1.jpg" />
+										<h4>
+											你是我的荣耀
+										</h4>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img alt="300x200" src="img/showImg1.jpg" />
+										<h4>
+											你是我的荣耀
+										</h4>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="thumbnail">
+										<img alt="300x200" src="img/showImg1.jpg" />
+										<h4>
+											你是我的荣耀
+										</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 热播推荐结束 -->
+			</div>
+		</div>
+		
+		<!-- 页面底部 -->
+		<div class="col-md-12 column" class="foot">
+				
+		</div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</html>

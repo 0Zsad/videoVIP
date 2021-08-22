@@ -1,0 +1,52 @@
+/*************************************/
+.item-img-gg img{
+	height: 100%;
+	width: 100%;
+}
+
+.item-img-gg{
+	margin-bottom: 30px;
+}
+
+.item-spfm{
+	background-color: #D2D2D2;
+	width: 220px;
+}
+
+.item-spfm img{
+	height: 260px;
+	width: 220px;
+}
+
+/*************************************/
+.item-info p{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #333333;
+}
+
+.item-button{
+	width: 150px;
+}
+
+/**************************************/
+.item-biaoge tr{
+	display: block;
+	font-size: 20px;
+	margin: 5px 0px 5px 0px;
+}
+
+.item-biaoge tr td:first-child{
+	padding-right: 10px;
+	color: red;
+}
+
+.item-tuijian{
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.item-img .thumbnail img{
+	height: 220px;
+}

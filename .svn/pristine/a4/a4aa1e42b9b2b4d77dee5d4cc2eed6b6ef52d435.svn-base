@@ -1,0 +1,37 @@
+/********************* 为你推荐Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 12;i++){
+		  zy +=	'<div class="col-md-2 item-img">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="../'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".item-tuijian1").append(zy);
+	}
+});
+
+/********************* 点击收藏按钮添加入用户收藏夹 ********************/
+var spid = UrlParm.parm("spid");
+//用户名待修改
+function add(){
+	$.ajax({
+		type:"post",
+		url:"/videoVIP/ScbController/add.do?yhzh=zhongjin",
+		data:{spid:spid},
+		dataType:"json",
+		success:function(ret){
+			if(ret){
+				alert("收藏成功！");
+			}else{
+				alert("收藏失败！");
+			}
+		}
+	});
+}

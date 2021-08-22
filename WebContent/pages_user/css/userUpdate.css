@@ -1,0 +1,35 @@
+/************************ 可选要或者不要 *******************************/
+@media screen and (min-width: 1480px) {
+	.container{
+		width: 1480px;
+	}
+}
+
+/*************************** 主体 ************************************/
+.form-group label{
+	font-size: 16px;
+}
+
+.form-group{
+	margin-bottom: 20px;
+}
+
+.item-img{
+	height: 60px;
+	width: 60px;
+}
+
+#yhnc{
+	color: #000000;
+}
+
+#pwdPrompt{
+	color: red;
+	font-size: 15px;
+}
+
+#update{
+	width: 80px;
+	height: 35px;
+	border-radius: 5px;
+}

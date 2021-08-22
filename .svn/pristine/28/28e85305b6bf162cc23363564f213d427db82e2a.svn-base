@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页面</title>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/css/nav-foot.css"/>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="/videoVIP/font-awesome-4.7.0/css/font-awesome.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/css/index.css"/>
+	</head>
+	<body>
+		<!-- 页面头部（可复制） -->
+		<div class="head"></div>
+		
+		<!-- 页面主体 -->
+		<div class="container">
+			<!-- 上半区 -->
+			<div class="row clearfix">
+				<!-- 轮播热门视频 -->
+				<div class="col-md-12 column">
+					<div class="carousel slide" id="carousel-743702">
+						<ol class="carousel-indicators">
+							<li class="active" data-slide-to="0" data-target="#carousel-743702">
+							</li>
+							<li data-slide-to="1" data-target="#carousel-743702">
+							</li>
+							<li data-slide-to="2" data-target="#carousel-743702">
+							</li>
+							<li data-slide-to="3" data-target="#carousel-743702">
+							</li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="item active item-lunbo">
+								<img alt="" src="img/showImg3.jpg"/>
+							</div>
+							<div class="item item-lunbo">
+								<img alt="" src="img/showImg4.jpg"/>
+							</div>
+							<div class="item item-lunbo">
+								<img alt="" src="img/showImg5.jpg"/>
+							</div>
+							<div class="item item-lunbo">
+								<img alt="" src="img/showImg6.jpg"/>
+							</div>
+						</div> 
+						<a class="left carousel-control" href="#carousel-743702" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a> 
+						<a class="right carousel-control" href="#carousel-743702" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+					
+					<!-- 页面广告 -->
+					<div class="gg">
+						<img src="img/img-gg.jpg"/>
+					</div>
+				</div>
+				
+				<!-- 热播推荐开始 -->
+				<div class="col-md-4 column">
+					<!-- 字体图标+热播推荐一行 -->
+					<div class="col-md-12 column">
+						<a class="navbar-brand" href="#">
+							<i class="fa fa-free-code-camp" aria-hidden="true"></i>
+							&nbsp;&nbsp;热播推荐
+						</a>
+					</div>
+					
+					<div class="row item-big">
+						<!-- data -->
+					</div>
+				</div>
+				
+				<!-- 热播推荐右侧 -->
+				<div class="col-md-8 column">
+					<div class="row clearfix">
+						<div class="col-md-12 column">
+							<div class="col-md-12 column" style="height: 52px;">
+								<!-- 空，占位 -->
+							</div>
+							<div class="row img-size item-rebo">
+								<!-- 右侧缩略图data -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 热播推荐结束 -->
+			</div>
+			
+			<!-- 页面广告 -->
+			<div class="gg">
+				<img src="img/img-gg.jpg"/>
+			</div>
+			
+			<!-- 下半区 -->
+			<!-- 电影分区开始 -->
+			<div class="row clearfix">
+				<div class="col-md-10 column">
+					<!-- 字体图标+电影 -->
+					<div class="col-md-12 column">
+						<a class="navbar-brand" href="#">
+							<i class="fa fa-video-camera" aria-hidden="true"></i>
+							&nbsp;&nbsp;电影
+						</a>
+					</div>
+					
+					<div class="row dy" id="img-movie">
+						<!-- data -->
+					</div>
+				</div>
+				<div class="col-md-2 column">
+					<div class="item-phb">
+						<h4>排行榜</h4>
+						<!-- 更多 -->
+						<a href="#" id="more">更多电影</a>
+					</div>
+					<table>
+						<tbody class="item-biaoge" id="rank1">
+							<!-- data -->
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 页面广告 -->
+				<div class="gg">
+					<img src="img/img-gg.jpg"/>
+				</div>
+				
+			</div>
+			<!-- 电影分区结束 -->
+			
+			<!-- 动漫分区开始 -->
+			<div class="row clearfix">
+				<div class="col-md-10 column">
+					<!-- 字体图标+动漫 -->
+					<div class="col-md-12 column">
+						<a class="navbar-brand" href="#">
+							<i class="fa fa-drupal" aria-hidden="true"></i>
+							&nbsp;&nbsp;动漫
+						</a>
+					</div>
+					
+					<div class="row dm" id="img-movie">
+						<!-- data -->
+					</div>
+				</div>
+				<div class="col-md-2 column">
+					<div class="item-phb">
+						<h4>排行榜</h4>
+						<!-- 更多 -->
+						<a href="#" id="more">更多动漫</a>
+					</div>
+					<table>
+						<tbody class="item-biaoge" id="rank2">
+							<!-- data -->
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 页面广告 -->
+				<div class="gg">
+					<img src="img/img-gg.jpg"/>
+				</div>
+				
+			</div>
+			<!-- 动漫分区结束 -->
+			
+			<!-- 剧集分区开始 -->
+			<div class="row clearfix">
+				<div class="col-md-10 column">
+					<!-- 字体图标+剧集 -->
+					<div class="col-md-12 column">
+						<a class="navbar-brand" href="#">
+							<i class="fa fa-television" aria-hidden="true"></i>
+							记录片
+						</a>
+					</div>
+					
+					<div class="row jj" id="img-movie">
+						<!-- data -->
+					</div>
+				</div>
+				<div class="col-md-2 column">
+					<div class="item-phb">
+						<h4>排行榜</h4>
+						<!-- 更多 -->
+						<a href="#" id="more">更多记录片</a>
+					</div>
+					<table>
+						<tbody class="item-biaoge" id="rank3">
+							<!-- data -->
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 页面广告 -->
+				<div class="gg">
+					<img src="img/img-gg.jpg"/>
+				</div>
+				
+			</div>
+			<!-- 剧集分区结束 -->
+			
+			<!-- 综艺分区开始 -->
+			<div class="row clearfix">
+				<div class="col-md-10 column">
+					<!-- 字体图标+综艺 -->
+					<div class="col-md-12 column">
+						<a class="navbar-brand" href="#">
+							<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+							&nbsp;&nbsp;综艺
+						</a>
+					</div>
+					
+					<div class="row zy" id="img-movie">
+						<!-- data -->
+					</div>
+				</div>
+				<div class="col-md-2 column">
+					<div class="item-phb">
+						<h4>排行榜</h4>
+						<!-- 更多 -->
+						<a href="#" id="more">更多综艺</a>
+					</div>
+					<table>
+						<tbody class="item-biaoge" id="rank4">
+							<!-- data -->
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- 页面广告 -->
+				<div class="gg">
+					<img src="img/img-gg.jpg"/>
+				</div>
+				
+			</div>
+			<!-- 综艺分区结束 -->			
+			
+		</div>
+		<!-- 页面主体结束 -->
+		
+		<!-- 页面底部 （可复制） -->
+		<div class="foot"></div>
+	</body>
+	<script src="/videoVIP/pages_video/js/UrlParm.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/js/index.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/js/load.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>导航栏查询结果</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/nav-foot.css"/>
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<style type="text/css">
+		.item-name{
+			margin-top: 30px;
+			margin-bottom: 30px;
+			font-size: 24px;
+		}
+		.limitwidth{
+			/* color: white; */
+			max-width: 200px;
+			/* float: left;
+			padding: 10px 0 0 10px; */
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			overflow: hidden;
+		}
+	</style>
+	<body>
+		<!-- 头部 -->
+		<div class="head"></div>
+		
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-12 column item-name">
+					<h3><i class="fa fa-caret-square-o-right" aria-hidden="true"></i>
+						<span style="margin-left: 3px;">
+							搜索结果
+						</span>
+					</h3>
+				</div>
+			</div>
+			
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<div class="row row-info">
+						<!-- data -->
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!-- foot -->
+		<div class="foot"></div>
+	</body>
+	<script src="../js/jquery-1.8.0.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../bootstrap-3.4.1-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/load.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	
+	$(function(){
+		doList();
+	})
+	
+	//获取session	
+	var spInfo = sessionStorage.getItem("spInfo");
+	var data = JSON.parse(spInfo);
+	
+	//头部模糊查询，查到数据跳到详情页
+	function doList(){
+		var zy = '';
+		for(i = 0;i < data.length;i++){
+		  	zy +=	'<div class="col-md-2">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="/videoVIP/pages_xq/spxq.html?spid='+data[i].spid+'"><img alt="....." style="height: 200px;" src="/videoVIP/spfmfile/'+ data[i].spfm +'" /></a>'
+			 +	'<h5 class="limitwidth">剧名：'+ data[i].sppm +'</h5>'
+			 +  '<h5 class="limitwidth">简介：'+ data[i].spjj +'</h5>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".row-info").append(zy);
+	}
+	
+	</script>
+</html>

@@ -1,0 +1,18 @@
+/********************* 为你推荐Ajax遍历视频封面 ********************/
+$.ajax({
+	type:"post",
+	url:"/videoVIP/SpbController/list.do?sp=1",
+	dataType:"json",
+	success:function(data){
+		var zy = '';
+		for(i = 0;i < 12;i++){
+		  zy +=	'<div class="col-md-2 item-img">'
+			 +	'<div class="thumbnail">'
+			 +	'<a href="#"><img alt="....." src="../'+ data[i].spfm +'" /></a>'
+			 +	'<h4>剧名：'+ data[i].sppm +'</h4>'
+			 +	'</div>'
+			 +	'</div>'
+		}
+		$(".item-tuijian1").append(zy);
+	}
+});

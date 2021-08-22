@@ -1,0 +1,21 @@
+package com.lanqiao.videoVIP.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lanqiao.videoVIP.entity.ScbList;
+import com.lanqiao.videoVIP.mapper.ScbListMapper;
+
+@Service
+public class ScbListService {
+	@Autowired
+	private ScbListMapper scbListMapper;
+	
+	public List<ScbList> list() {
+		List<ScbList> list = scbListMapper.list();
+		return list;
+	}
+
+}

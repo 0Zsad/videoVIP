@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<link rel="stylesheet" href="./css/register.css" />
+	</head>
+	<body>
+		<form name="form2">
+			<h3>用户注册：</h3>
+			<hr>
+			<p>账号：<span class="a" id="as">
+				<input type="text" id="username" name="yhzh" required placeholder autofocus></span>
+			</p>
+			<div id="namePrompt"></div>
+			<hr>
+			<p>密码：<span class="a" id="as1">
+				<input type="password" id="password" name="pwd" required placeholder></span>
+			</p>
+			<div id="pwdPrompt"></div>
+			<hr>
+			<p>昵称：<span class="a" id="as2">
+			<input type="text" name="yhnc" required placeholder></span>
+				<hr>
+			</p>
+			<center>
+				<input type="button" class="reg" id="register" value="立即注册"/>
+			</center>
+		</form>
+	</body>
+	<script src="../js/jquery-1.8.0.min.js"></script>
+	<script src="./js/register.js" type="text/javascript"></script>
+</html>

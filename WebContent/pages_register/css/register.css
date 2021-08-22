@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body{
+	background: url(../img/bg1.jpg) no-repeat ;
+}
+		
+form {
+	width: 500px;
+	height: 450px;
+	border: 1px solid black;
+	margin: 100px auto;
+	background-color: #DFF0D8;
+}
+
+form h3 {
+	margin-top: 50px;
+	margin-left: 80px;
+}
+
+p {
+	margin-left: 80px;
+}
+
+hr {
+	margin-left: 80px;
+}
+			
+.a{
+	margin-left: 40px;
+}
+
+#namePrompt{
+	position: absolute;
+	left: 45%;
+	color: red;
+	font-size: 10px;
+}
+
+#pwdPrompt{
+	position: absolute;
+	left: 45%;
+	color: red;
+	font-size: 10px;
+}
+
+#register{
+	width: 130px;
+	height: 35px;
+	margin-top: 45px;
+	background-color: #3e9eff;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+
+span#as:hover input {
+	width: 250px;
+	height: 40px;
+}
+
+span#as1:hover input {
+	width: 250px;
+	height: 40px;
+}
+
+span#as2:hover input {
+	width: 250px;
+	height: 40px;
+}
+
+
+
+
+
+
+
+
+

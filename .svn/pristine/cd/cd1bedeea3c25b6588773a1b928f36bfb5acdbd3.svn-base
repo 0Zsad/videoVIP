@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>视频管理</title>
+	<link rel="stylesheet" type="text/css" href="/videoVIP/css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/adminContent.css" />
+	<link rel="stylesheet" type="text/css" href="/videoVIP/bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/videoVIP/css/nav-foot.css"/>
+	<!-- 字体图标 -->
+	<link rel="stylesheet" type="text/css" href="/videoVIP/font-awesome-4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+	<!--
+    	描述：条件查询
+    -->
+	<!-- 1.search -->
+	<div class="search">
+		<!-- 1.1. head -->
+		<div class="head" style="color: #000000;background-color: #55557f;">
+			<span><img src="img/search.ico"/> 查询条件</span>
+			<span class="showHide">
+				<img src="img/up.ico" class="up"/>
+				<img src="img/down.ico" class="down" style="display: none;"/>
+			</span>
+		</div>
+		<!-- 1.2. body -->
+		<div class="body" >
+			<form name="form1">
+				<table width="100%" cellspacing="0">
+					<tr>
+						<td>视频片名</td>
+						<td><input name="sppm" placeholder="支持模糊查询"/></td>
+						<td>视频类型</td>
+						<td>
+							<select name="splx">
+								<option value="">请选择</option>
+								<option value="1">电影</option>
+								<option value="2">动漫</option>
+								<option value="3">纪录片</option>
+								<option value="4">综艺</option>
+							</select>
+						</td>
+						<td>视频简介</td>
+						<td><input name="spdq" placeholder="支持模糊查询"/></td>
+					</tr>
+					<tr>
+						<td colspan="6" id="btnPanel">
+							<input type="button" onclick="doList()" value="查询" />
+							<input type="reset"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	
+	<!-- 2.space -->
+	<div class="space"></div>
+	
+	<!--
+    	描述：查询结果
+    -->
+	<!-- 3.content -->
+	<div class="content" >
+	<!-- 3.1. head -->
+		<div class="head"style="color: #000000;background-color: #55557f;">
+			<span><img src="img/table.ico"/> 查询结果</span>
+			<span onclick="location.reload()" class="refresh"><img src="img/refresh.ico"/></span>
+		</div>
+	</div>
+	<div class="col-md-12 column" >
+		<div class="row dy" id="img-movie">
+			<!-- data -->
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="/videoVIP/pages_admin/js/showHide.js" type="text/javascript" ></script>
+<script src="/videoVIP/bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+$(function(){
+	doList();
+})
+
+function doList(){
+	$.ajax({
+		type:"post",
+		url:"/videoVIP/SpbController/list.do",
+		data:{
+			spid:null,
+			sppm: form1.sppm.value,
+			splx: form1.splx.value,
+			spdq: form1.spdq.value
+			},
+		dataType:"json",
+		success:function(data){
+			$(".dy").empty();
+			var sp = '';
+			for(i = 0;i < data.length;i++){
+			  sp +=	'<div class="col-md-2">'
+				 +	'<div class="thumbnail">'
+				 +	'<a href="/videoVIP/pages_admin/videoUpdate.html?spid='+data[i].spid+'"><img alt="'+ data[i].sppm +'" src="'+ data[i].sppm +''+ data[i].spfm +'" /></a>'
+				 +	'<h4> '+ data[i].sppm +'</h4>'
+				 +	'<input type="button" onclick="doDelete(\''+data[i].spid+'\')" value="删除" />'
+				 +	'</div>'
+				 +	'</div>'
+			}
+			$(".dy").append(sp);
+		}
+	});
+}
+
+function doDelete(spid){
+	$.post("/videoVIP/SpbController/deleteById.do",{spid:spid},function(ret){
+		if(ret == true){
+			location.href = "/videoVIP/pages_admin/videoMgr.html";
+		}else{
+			alert("删除失败！");
+		}
+	});
+}
+</script>
+</html>

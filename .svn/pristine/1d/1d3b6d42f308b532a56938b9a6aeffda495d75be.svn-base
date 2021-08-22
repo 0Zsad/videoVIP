@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>视频播放页面</title>
+		<link rel="stylesheet" type="text/css" href="./css/video.css"/>
+		<link rel="stylesheet" href="./layui/css/layui.css"  media="all">
+		<link rel="stylesheet" type="text/css" href="/videoVIP/bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="/videoVIP/css/nav-foot.css"/>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="/videoVIP/font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!-- header -->
+		<!-- 页面头部（可复制） -->
+		<div class="head">
+			<!-- 导航条部分开始 -->
+			<nav class="navbar navbar-default navbar-static-top" id="nav1">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <a class="navbar-brand glyphicon glyphicon-film" href="/videoVIP/index.html"></a>
+			      <a class="navbar-brand" href="/videoVIP/index.html" id="vip">VIP影院</a>
+			    </div>
+			  	
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li >
+			        	<a href="/videoVIP/index.html">首页 <span class="sr-only">(current)</span></a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/dy.html">电影</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/dm.html">动漫</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/jj.html">剧集</a>
+			        </li>
+			        <li>
+			        	<a href="/videoVIP/pages_fl/zy.html">综艺</a>
+			        </li>
+			      </ul>
+			      <!-- 用户头像 -->
+			      <a href="/videoVIP/pages_Login/userlogin.html" id="yhtx">
+			      	<img src="img/yhtx.jpeg" class="img-circle">
+			      	<span id="">
+			      		登&nbsp;&nbsp;陆
+			      	</span>
+			      </a>
+			      
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" id="nav-text" placeholder="尽情搜索">
+			        </div>
+			        <button type="submit" class="btn btn-info glyphicon glyphicon-search"></button>
+			      </form>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+			<!-- 导航条部分结束 -->
+		</div>
+		<!-- body -->
+		<div id="centent">
+			<!-- 视频内容 -->
+			<div id="video">
+				<p style="color: white;">视频名</p>
+				<!-- js生成下面代码 -->
+				<!-- <video controls autoplay>
+					<source src="https://www.runoob.com/try/demo_source/movie.mp4" type="video/mp4">
+					<source src="https://www.runoob.com/try/demo_source/movie.ogg" type="video/ogg">
+					<source src="https://www.runoob.com/try/demo_source/movie.webm" type="video/webm">
+				</video> -->
+			</div>
+			<div id="video_bottom">
+				<div id="video_bottom_til">
+					<span>电影名：菜鸟Movie</span>
+				</div>
+			</div>
+			<!-- 侧边 -->
+			<div id="video_side">
+				<div id="video_side_til"><span>相关或选集</span></div>
+				<div id="video_side_cen"></div>
+				<div id="video_side_den">
+					<div class="video_den">
+						<img src="http://i0.letvimg.com/lc12_yunzhuanma/202012/04/09/23/6364a301679dc5c48f1ce5efbf88028b_v2_MTQyMDQ1MTM2/thumb/2_400_225.jpg">
+						<div>
+							<p>汪苏泷《明天你是否依然爱我》（电影《明天你是否依然爱我》同名主题曲）MV</p>
+						</div>
+					</div>
+					<div class="video_den">
+						<img src="http://i0.letvimg.com/lc11_yunzhuanma/202012/03/11/23/a375ee94e195cfaff3cf4a4e910db21f_v2_MTQyMDA2NTU0/thumb/2_400_225.jpg">
+						<div>
+							<p>刘德华、倪妮《相信我》（电影《拆弹专家2》主题曲）</p>
+						</div>
+					</div>
+				</div>
+				<div id="video_side_btm"></div>
+			</div>
+		</div>
+		<!-- 介绍及评价 -->
+		<div id="desc">
+			<div class="img">
+				<img src="./img/test.png" height="175px" width="135px">
+			</div>
+			<div class="spdesc">
+				<p class="spname">视频名</p>
+				<p class="sptype">视频类型</p>
+				<p class="spinfo">视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介视频简介</p>
+			</div>
+			<!-- 评分 -->
+			<div class="rate">
+				<span>点评</span>
+				<div><div id="test6"></div></div>
+			</div>
+			<!-- 收藏 -->
+			<div class="coll">
+				<button id="collbtn" type="button" class="layui-btn"><i class="layui-icon"></i></button>
+			</div>
+		</div>
+		<!-- footer -->
+		<!-- 页面底部 （可复制） -->
+		<div class="foot">
+			<div class="col-md-12 column item-foot">
+				<p class="text-center">
+					 <em>免责声明：</em> VIP影院所有视频均来自互联网收集而来，版权归原创者所有，如果侵犯了你的权益，请通知我们，我们会及时删除侵权内容，谢谢合作。
+				</p>
+				<p class="text-center">
+					 <em>版权声明：</em> VIP影院是一个免费看电影非赢利性的网站，本站所有内容均来源于互联网相关站点自动搜索采集信息，相关链接已经注明来源。
+				</p>
+				<p class="text-center">
+					Copyright © 2021 · VIP影院 版权所有 · 版权反馈邮箱:88888888@gmail.com
+				</p>
+			</div>
+		</div>
+	</body>
+	<script src="./js/UrlParm.js" type="text/javascript" charset="utf-8"></script>
+	<!-- 前端跳转解析 -->
+	<!-- <script type="text/javascript">
+		var src = UrlParm.parm("src");
+		var str = "<video controls autoplay>"
+				+ "<source src='"+src+".mp4' type='video/mp4'>"
+				+ "<source src='"+src+".ogg' type='video/ogg'>"
+				+ "<source src='"+src+".webm' type='video/webm'>"
+				+ "</video>"
+		document.getElementById("video").innerHTML=str;
+	</script> -->
+	<script src="./layui/layui.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/rate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/videoVIP/bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+</html>

@@ -1,0 +1,41 @@
+layui.use(['rate'], function(){
+  var rate = layui.rate;
+  
+  //自定义文本
+  rate.render({
+    elem: '#test5'
+    ,value: 0
+    ,text: true
+    ,setText: function(value){ //自定义文本的回调
+      var arrs = {
+        '1': '极差'
+        ,'2': '差'
+        ,'3': '中等'
+        ,'4': '好'
+        ,'5': '极好'
+      };
+      this.span.text(arrs[value] || ( value + "星"));
+    }
+  })
+  
+  rate.render({
+    elem: '#test6'
+    ,value: 0
+    ,text: true
+    ,setText: function(value){
+      this.span.text(value);
+    },choose: function(value){	//点击执行该函数
+		console.log(value);
+	}
+  })
+ 
+  
+  //只读
+  rate.render({
+    elem: '#test9'
+    ,value: 3.7
+	,half:true
+    ,readonly: true
+  });
+
+});

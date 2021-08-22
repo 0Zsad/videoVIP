@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>视频详情页</title>
+		<link rel="stylesheet" type="text/css" href="../bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/nav-foot.css"/>
+		<link rel="stylesheet" type="text/css" href="css/spxq.css"/>
+		<!-- 字体图标 -->
+		<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css"/>
+	</head>
+	<body>
+		<!-- 页头 -->
+		<div class="head"></div>
+		
+		<!-- 主体 -->
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-9 column">
+					<div class="item-img-gg">
+						<img src="img/img-gg.gif"/>
+					</div>
+					<div class="row clearfix">
+						<div class="col-md-3 column">
+							<div class="item-spfm" style="width: 220px; height: 260px;">
+								<img id="fmimg" alt="220x260" width="220px" height="260px" src="img/showImg7.jpg" />
+							</div>
+						</div>
+						<div class="col-md-9 column item-info">
+							<h3 id="spname">片名：</h3>
+							<p id="sptype">类型：</p>
+							<p id="spdq">地区：</p>
+							<p id="sptime">时间：</p>
+							<p id="spjj">简介：</p>
+							<input id="bfbtn" type="button" class="btn btn-warning item-button" value="立即播放" />
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-3 column">
+					<div class="item-phb">
+						<h3>
+							<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+							排行榜
+						</h3>
+					</div>
+					<table>
+						<tbody class="item-biaoge">
+							<!-- data -->
+							<tr>
+								<td>
+									1
+								</td>
+								<td>
+									<a href="#">data</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									2
+								</td>
+								<td>
+									<a href="#">data</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+				<div class="col-md-12 column">
+					<div class="item-tuijian">
+						<h3>
+							<i class="fa fa-sign-language" aria-hidden="true"></i>
+							为你推荐
+						</h3>
+					</div>
+					
+					<div class="row item-tuijian1">
+						<!-- data -->
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- 页尾 -->
+		<div class="foot"></div>
+	</body>
+	<script src="https://code.jquery.com/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../bootstrap-3.4.1-dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/spxq.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/load.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/UrlParm.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/spxqdata.js" type="text/javascript" charset="utf-8"></script>
+</html>
